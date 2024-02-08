@@ -5,6 +5,7 @@ import {
 	createRoutesFromElements,
 } from 'react-router-dom';
 import NavBar from './components/navbar/NavBar';
+import { Landing } from './pages/Landing';
 
 function App() {
 	const router = createBrowserRouter(
@@ -14,6 +15,7 @@ function App() {
 				path="/"
 				element={<NavBar/>}
 			>
+				<Route path='/' element={<Landing />}/>
 				{/* add component/pages here */}
 			</Route>,
 		),
