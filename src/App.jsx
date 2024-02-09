@@ -5,8 +5,8 @@ import {
 	createRoutesFromElements,
 } from 'react-router-dom';
 import NavBar from './components/navbar/NavBar';
-import { Landing } from './pages/Landing';
-import { Merchandise } from './pages/Merchandise';
+import Landing from './pages/Landing';
+import Merchandise from './pages/Merchandise';
 
 function App() {
 	const router = createBrowserRouter(
