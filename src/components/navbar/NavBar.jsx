@@ -36,8 +36,7 @@ const NavBar = () => {
 								</div>
 								<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-2xl font-bold">
 									<Link to="/home" className="flex flex-shrink-0 items-center">
-										<span className="text-green-600">Eco</span>
-										<span className="text-blue-600">Sorter</span>
+										<span className="text-green-600">Parakram</span>
 									</Link>
 									<div className="hidden sm:ml-6 sm:block">
 										<div className="flex space-x-4">
