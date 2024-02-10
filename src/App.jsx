@@ -16,6 +16,7 @@ import { AnimatePresence } from "framer-motion";
 import Footer from "./components/footer/Footer";
 import Sponsors from "./pages/Sponsors";
 import Accomodation from "./pages/Accomodation";
+import NoPage from "./pages/noPage";
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function App() {
           <Route path="/sponsors" element={<Sponsers />} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/accomodation" element={<Accomodation/>} />
+          <Route path="*" element={<NoPage/>} />
         </Routes>
       </AnimatePresence>
       <Footer />
