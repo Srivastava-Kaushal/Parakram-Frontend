@@ -7,6 +7,7 @@ import img6 from "../assets/images/cri3.jpg";
 import img7 from "../assets/images/bas6.jpg";
 import img8 from "../assets/images/ls4.jpg";
 import img9 from "../assets/images/bas4.jpg";
+import transition from "../transition";
 import { useState } from "react";
 
 const Landing = () => {
@@ -18,7 +19,7 @@ const Landing = () => {
     setTimeout(() => {
       setShow(true);
     }, 1000);
-  }, 4000);
+  }, 3000);
 
   const load = {
     hidden: {
@@ -72,7 +73,7 @@ const Landing = () => {
         ease: "easeInOut",
         duration: 1,
         staggerChildren: 0.4,
-        delayChildren: 1,
+        delayChildren: 0.5,
       },
     },
   };
@@ -88,7 +89,7 @@ const Landing = () => {
       transition: {
         ease: "easeInOut",
         duration: 0.8,
-        delay: 3,
+        delay: 1.5,
       },
     },
   };
@@ -323,4 +324,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default transition(Landing);
