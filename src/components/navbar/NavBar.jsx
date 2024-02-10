@@ -4,9 +4,9 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-	{ name: 'Start', href: '/', current: true },
-	{ name: 'Reviews', href: '/', current: false },
-	{ name: 'Contact Us', href: '/', current: false },
+	{ name: 'Home', href: '/', current: true },
+	{ name: 'Events', href: '/events', current: false },
+	{ name: 'Merchandise', href: '/merchandise', current: false },
 	{ name: 'Calendar', href: '/', current: false },
 ];
 
@@ -35,7 +35,7 @@ const NavBar = () => {
 									</Disclosure.Button>
 								</div>
 								<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-2xl font-bold">
-									<Link to="/home" className="flex flex-shrink-0 items-center">
+									<Link to="/" className="flex flex-shrink-0 items-center">
 										<span className="text-green-600">Parakram</span>
 									</Link>
 									<div className="hidden sm:ml-6 sm:block">
@@ -43,7 +43,7 @@ const NavBar = () => {
 											{navigation.map((item) => (
 												<Link
 													key={item.name}
-													href={item.href}
+													to={item.href}
 													className={classNames(
 														item.current
 															? 'bg-[#3C91E6] text-white'
@@ -120,7 +120,7 @@ const NavBar = () => {
 									<Disclosure.Button
 										key={item.name}
 										as="Link"
-										href={item.href}
+										to={item.href}
 										className={classNames(
 											item.current
 												? 'bg-gray-900 text-white'

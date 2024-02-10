@@ -1,8 +1,9 @@
 import { Formik, Form, FieldArray } from "formik";
-import AddMember from "./AddMembers";
+import AddMember from "../FormComps/AddMembers";
 import { Button } from "flowbite-react";
-import MyTextInput from "./input";
+import MyTextInput from "../FormComps/input";
 import validationSchema from "./validationSchema";
+import MySelect from "../FormComps/selectLeader";
 
 const geninitvals = (minTeamLength) => {
   const initmems = [];
@@ -43,12 +44,34 @@ const RegisterForm = (props) => {
     }
   };
 
+  const renderOptions = ({ members }) => {
+    let options = members.map((member, index) => {
+      console.log(Object.keys(member).length);
+      if (
+        Object.keys(member).length === 2 &&
+        member.name != "" &&
+        member.email != ""
+      ) {
+        return (
+          <option key={index + 1} value={member.email}>
+            {member.name}
+          </option>
+        );
+      }
+    });
+
+    const defaultOption = <option key={0}>select Leader</option>;
+    options.unshift(defaultOption);
+    console.log(options);
+    return options;
+  };
+
   return (
     <>
       <h1>register Event</h1>
       <Formik
         initialValues={geninitvals(props.minTeamLength)}
-        // validation:,
+        validationSchema={validationSchema}
         onSubmit={onSubmit}
       >
         {({ values }) => (
@@ -76,6 +99,9 @@ const RegisterForm = (props) => {
                 </div>
               )}
             </FieldArray>
+            <MySelect label="Team Leader" name="TeamLeader">
+              {renderOptions(values)}
+            </MySelect>
             <div>
               <Button type="submit">submit</Button>
             </div>

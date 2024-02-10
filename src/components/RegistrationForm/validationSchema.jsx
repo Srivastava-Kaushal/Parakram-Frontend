@@ -1,16 +1,16 @@
 import * as Yup from "yup";
 
 const validationSchema = Yup.object({
-  firstName: Yup.string()
+  members: Yup.array().of(
+    Yup.object().shape({
+      name: Yup.string().required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+    })
+  ),
+  TeamLeader: Yup.string().email("Invalid email address").required("Required"),
+  TeamName: Yup.string()
     .max(15, "Must be 15 characters or less")
     .required("Required"),
-  lastName: Yup.string()
-    .max(20, "Must be 20 characters or less")
-    .required("Required"),
-  email: Yup.string().email("Invalid email address").required("Required"),
-  acceptedTerms: Yup.boolean()
-    .required("Required")
-    .oneOf([true], "You must accept the terms and conditions."),
 });
 
 export default validationSchema;
