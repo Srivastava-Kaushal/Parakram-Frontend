@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TeamSports from './TeamSports';
+import IndividualSports from './IndividualSports';
 
 const style1 =
 	'inline-block w-full p-4 border-gray-700 focus:ring-4 focus:ring-blue-300 active focus:outline-none bg-[#4a4949] text-white';
@@ -28,7 +29,7 @@ const EventsList = () => {
 					</span>
 				</li>
 			</ul>
-            {type===0 ? <TeamSports/ > : <> notjing </>}
+            {type===0 ? <TeamSports/ > : <IndividualSports />}
 		</>
 	);
 };
