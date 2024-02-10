@@ -1,4 +1,5 @@
 import logo from "../assets/logo-svg.svg";
+import React from "react";
 import { Link } from "react-router-dom";
 
 function NoPage() {

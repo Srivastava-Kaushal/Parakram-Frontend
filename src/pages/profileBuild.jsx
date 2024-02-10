@@ -7,6 +7,7 @@ const ProfilePage = () => {
   useEffect(() => {
     scroll.scrollToTop({ duration: 1000 });
   }, []);
+  
   return (
     <div>
       <SignUpForm />

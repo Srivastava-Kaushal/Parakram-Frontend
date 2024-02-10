@@ -16,7 +16,7 @@ import { AnimatePresence } from "framer-motion";
 import Footer from "./components/footer/Footer";
 import Sponsors from "./pages/Sponsors";
 import Accomodation from "./pages/Accomodation";
-import NoPage from "./pages/noPage";
+import NoPage from "./pages/NoPage";
 
 function App() {
   const location = useLocation();
