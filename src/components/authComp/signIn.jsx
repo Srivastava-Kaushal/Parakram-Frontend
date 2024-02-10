@@ -6,13 +6,17 @@ import { useState } from "react";
 import SetNewPass from "./setNewPass";
 import OtpForm from "./otpform";
 import Emailform from "./emailInput";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignIp = () => {
   const [openModal, setOpenModal] = useState([false, false, false]);
 
+  const navigate = useNavigate();
   const onSubmit = async (values) => {
-    await new Promise((r) => setTimeout(r, 500));
-    alert(JSON.stringify(values, null, 2));
+    const {data} = await axios.post("http://localhost:8000/api/login" , values , {withCredentials : true});
+    console.log("Hello");
+    navigate("/home");
   };
 
   return (
