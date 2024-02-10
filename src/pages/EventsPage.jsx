@@ -1,5 +1,6 @@
 import EventsPageImg from '../assets/Images/EventsPageImg.jpg';
 import EventsList from '../components/EventsPageComponent/EventsList';
+import transition from '../transition';
 
 const EventsPage = () => {
 	return (
@@ -20,4 +21,4 @@ const EventsPage = () => {
 	);
 };
 
-export default EventsPage;
+export default transition(EventsPage);
