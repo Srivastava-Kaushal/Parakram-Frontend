@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 import AccCard from "../components/AccomodationCardComp/AccCard";
 import transition from "../transition"
 
 function Accomodation() {
+  
+
+  useEffect(() => {
+    scroll.scrollToTop({ duration: 1000 });
+  }, []);
  
   const CardDetails = [
     {

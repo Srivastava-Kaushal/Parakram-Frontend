@@ -4,14 +4,32 @@ import { Button, Modal } from "flowbite-react";
 import validationSchema from "./validation";
 import { useState } from "react";
 import OtpForm from "./otpform";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [openModal, setOpenModal] = useState(false);
+  const navigate = useNavigate();
+  // const [userID, setUserID] = useState(null);
 
   const onSubmit = async (values) => {
-    await new Promise((r) => setTimeout(r, 500));
-    alert(JSON.stringify(values, null, 2));
-    setOpenModal(true);
+    try {
+      // const {email ,username , password} = values;
+      const { data } = await axios.post(
+        "http://localhost:8000/api/register",
+        values,
+        {
+          withCredentials: true,
+        }
+      );
+      console.log(data);
+      const { _id } = data.user;
+      localStorage.setItem("userId" , _id);
+      // setUserID(_id);
+      setOpenModal(true);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
@@ -22,11 +40,10 @@ const SignUp = () => {
           email: "",
           password: "",
           confirmPassword: "",
+          username: "",
         }}
         validationSchema={validationSchema}
-        onSubmit={(values) => {
-          onSubmit(values);
-        }}
+        onSubmit={onSubmit}
       >
         {(f) => {
           return (
@@ -36,6 +53,12 @@ const SignUp = () => {
                   label="email"
                   name="email"
                   type="email"
+                  placeholder=""
+                />
+                <MyTextInput
+                  label="username"
+                  name="username"
+                  type="text"
                   placeholder=""
                 />
 

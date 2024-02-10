@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import styled from '@emotion/styled';
+import { animateScroll as scroll } from "react-scroll";
 
 import tata from '../assets/Images/logos/tata.png'
 import cairn from '../assets/Images/logos/cairn.png'
@@ -19,12 +20,17 @@ import volvo from '../assets/Images/logos/volvo.jpg'
 import shell from '../assets/Images/logos/shell.png'
 import canara_bank from '../assets/Images/logos/canara_bank.png'
 import transition from '../transition';
+import { useEffect } from 'react';
 
 function Sponsors() {
 	const StyledImg = styled('img')({
 		width: '130px',
 		height: '100px',
 	});
+	
+	useEffect(() => {
+		scroll.scrollToTop({ duration: 1000 });
+	  }, []);
 
 	return (
 		<>

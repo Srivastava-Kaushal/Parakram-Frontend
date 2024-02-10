@@ -15,8 +15,10 @@ import { AnimatePresence } from "framer-motion";
 import Footer from "./components/footer/Footer";
 import Sponsors from "./pages/Sponsors";
 import Accomodation from "./pages/Accomodation";
+import NoPage from "./pages/NoPage";
 
 function App() {
+  //hello
   const location = useLocation();
   return (
     <>
@@ -32,6 +34,7 @@ function App() {
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/accomodation" element={<Accomodation/>} />
+          <Route path="*" element={<NoPage/>} />
         </Routes>
       </AnimatePresence>
       <Footer />
