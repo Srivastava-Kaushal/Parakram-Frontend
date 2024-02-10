@@ -5,8 +5,9 @@ import { motion, useAnimate } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button, Modal } from "flowbite-react";
+import transition from "../transition";
 
-function Merchandise() {
+const Merchandise = () => {
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
@@ -18,7 +19,7 @@ function Merchandise() {
   });
   const paymentHandler = async (e) => {
     e.preventDefault();
-    const obj  = {...data};
+    const obj = { ...data };
     let jsonobj = JSON.stringify(obj);
     window.alert(jsonobj);
   };
@@ -26,32 +27,38 @@ function Merchandise() {
     setData({ ...data, [e.target.id]: e.target.value });
   };
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel slideInterval={2000}>
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-          alt="..."
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-          alt="..."
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-          alt="..."
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-          alt="..."
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-          alt="..."
-        />
-      </Carousel>
+    <div className="h-screen">
+      <div className="h-[400px]">
+        <Carousel slideInterval={2000}>
+          <img
+            src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+            alt="..."
+            // style={{
+            //   maxHeight: "100%",
+            //   maxWidth: "100%",
+            // }}
+          />
+          <img
+            src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+            alt="..."
+          />
+          <img
+            src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+            alt="..."
+          />
+          <img
+            src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
+            alt="..."
+          />
+          <img
+            src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
+            alt="..."
+          />
+        </Carousel>
+      </div>
       <div className="flex justify-center items-center h-[200px]">
         <div>
-        <Button onClick={() => setOpenModal(true)}>Buy Our Merch</Button>
+          <Button onClick={() => setOpenModal(true)}>Buy Our Merch</Button>
         </div>
         <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
           <Modal.Header>Merchandise Form</Modal.Header>
@@ -152,16 +159,16 @@ function Merchandise() {
               </motion.form>
             </div>
           </Modal.Body>
-          {/* <Modal.Footer>
+          <Modal.Footer>
             <Button onClick={() => setOpenModal(false)}>I accept</Button>
             <Button color="gray" onClick={() => setOpenModal(false)}>
               Decline
             </Button>
-          </Modal.Footer> */}
+          </Modal.Footer>
         </Modal>
       </div>
     </div>
   );
 }
 
-export default Merchandise;
+export default transition(Merchandise);

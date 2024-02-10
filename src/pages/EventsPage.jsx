@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import EventsPageImg from '../assets/Images/EventsPageImg.jpg';
 import EventsList from '../components/EventsPageComponent/EventsList';
+import transition from '../transition';
 
 const titleVariants = {
 	hidden: { opacity: 0 },
@@ -31,4 +32,4 @@ const EventsPage = () => {
 	);
 };
 
-export default EventsPage;
+export default transition(EventsPage);
