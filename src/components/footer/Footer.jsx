@@ -14,7 +14,7 @@ const Footer = () => {
           </span>{" "}
           2024
         </h3>
-        <a
+        {/* <a
           href="https://drive.google.com/file/d/1XWCCAvG8_vHOTChQzw3sT0nUJuZRuPog/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Footer = () => {
               Srijan Brochure
             </p>
           </button>
-        </a>
+        </a> */}
         <p className="footer-links text-[#ffffff] hover:text-yellow-400">
           <a href="#" className="link-1">
             Home

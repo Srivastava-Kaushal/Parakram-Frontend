@@ -17,6 +17,8 @@ import SignIn from "./pages/auth/signInPage";
 import Sponsers from "./pages/Sponsors";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/footer/Footer";
+import Sponsors from "./pages/Sponsors";
+import Accomodation from "./pages/Accomodation";
 
 function App() {
   const location = useLocation();
@@ -30,6 +32,8 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/sponsors" element={<Sponsors/>} />
+          <Route path="/accomodation" element={<Accomodation/>} />
         </Routes>
       </AnimatePresence>
       <Footer/>
