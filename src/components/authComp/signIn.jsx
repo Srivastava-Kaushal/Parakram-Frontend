@@ -2,11 +2,15 @@ import { Formik, Form } from "formik";
 import MyTextInput from "../FormComps/input";
 import { Button } from "flowbite-react";
 import validationSchema from "./validation";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignIp = () => {
+  const navigate = useNavigate();
   const onSubmit = async (values) => {
-    await new Promise((r) => setTimeout(r, 500));
-    alert(JSON.stringify(values, null, 2));
+    const {data} = await axios.post("http://localhost:8000/api/login" , values , {withCredentials : true});
+    console.log("Hello");
+    navigate("/home");
   };
 
   return (
