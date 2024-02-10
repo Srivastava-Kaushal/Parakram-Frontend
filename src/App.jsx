@@ -30,9 +30,11 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/signIn" element={<SignIn />} />
         </Routes>
       </AnimatePresence>
-      <Footer/>
+      <Footer />
     </>
   );
 }

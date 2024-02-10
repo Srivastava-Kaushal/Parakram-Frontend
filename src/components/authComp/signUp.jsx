@@ -1,6 +1,6 @@
 import { Formik, Form } from "formik";
 import MyTextInput from "../FormComps/input";
-import { Button, Modal } from "flowbite-react";
+import { Button, Modal, ModalBody } from "flowbite-react";
 import validationSchema from "./validation";
 import { useState } from "react";
 import OtpForm from "./otpform";
@@ -61,9 +61,12 @@ const SignUp = () => {
       </Formik>
 
       <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
-        <div className="m-10">
-          <OtpForm />
-        </div>
+        <Modal.Header>otp</Modal.Header>
+        <Modal.Body>
+          <div className="m-10">
+            <OtpForm closeModal={() => setOpenModal(false)} />
+          </div>
+        </Modal.Body>
       </Modal>
     </div>
   );
