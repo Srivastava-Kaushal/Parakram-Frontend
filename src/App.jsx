@@ -29,10 +29,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signIn" element={<SignIn />} />
-<<<<<<< HEAD
-=======
           <Route path="/sponsors" element={<Sponsers />} />
->>>>>>> 22018b54ba6c572f2044aa847c6460703f9fae37
         </Routes>
       </AnimatePresence>
       <Footer />

@@ -5,10 +5,10 @@ import validationSchema from "./validation";
 import { useState } from "react";
 import SetNewPass from "./setNewPass";
 import OtpForm from "./otpform";
+import Emailform from "./emailInput";
 
 const SignIp = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [openSetModal, setopenSetModal] = useState(false);
+  const [openModal, setOpenModal] = useState([false, false, false]);
 
   const onSubmit = async (values) => {
     await new Promise((r) => setTimeout(r, 500));
@@ -47,7 +47,7 @@ const SignIp = () => {
             <Button type="submit">Submit</Button>
             <Button
               onClick={() => {
-                setOpenModal(true);
+                setOpenModal([true, false, false]);
               }}
             >
               forgot password??
@@ -55,23 +55,35 @@ const SignIp = () => {
           </Form>
         </>
       </Formik>
-      <Modal dismissible show={openModal}>
+      <Modal
+        dismissible
+        show={openModal[0]}
+        onClose={() => {
+          setOpenModal([false, false, false]);
+        }}
+      >
         <Modal.Header>forgot password</Modal.Header>
         <Modal.Body>
           <div className="m-10">
-            <OtpForm
-              openModal={() => setopenSetModal(true)}
-              closeModal={() => setOpenModal(false)}
-            />
+            <Emailform openModal={() => setOpenModal([false, true, false])} />
           </div>
         </Modal.Body>
       </Modal>
 
-      <Modal dismissible show={openSetModal}>
+      <Modal dismissible show={openModal[1]}>
         <Modal.Header>forgot password</Modal.Header>
         <Modal.Body>
           <div className="m-10">
-            <SetNewPass closeModal={() => setopenSetModal(false)} />
+            <OtpForm openModal={() => setOpenModal([false, false, true])} />
+          </div>
+        </Modal.Body>
+      </Modal>
+
+      <Modal dismissible show={openModal[2]}>
+        <Modal.Header>forgot password</Modal.Header>
+        <Modal.Body>
+          <div className="m-10">
+            <SetNewPass openModal={() => setOpenModal([false, false, false])} />
           </div>
         </Modal.Body>
       </Modal>

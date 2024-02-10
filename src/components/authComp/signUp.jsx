@@ -1,6 +1,6 @@
 import { Formik, Form } from "formik";
 import MyTextInput from "../FormComps/input";
-import { Button, Modal, ModalBody } from "flowbite-react";
+import { Button, Modal } from "flowbite-react";
 import validationSchema from "./validation";
 import { useState } from "react";
 import OtpForm from "./otpform";
