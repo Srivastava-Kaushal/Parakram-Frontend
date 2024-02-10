@@ -12,6 +12,23 @@ const SignUp = () => {
   const navigate = useNavigate();
   // const [userID, setUserID] = useState(null);
 
+    const onSubmitOtp = async (values) => {
+    try{
+      const userId = localStorage.getItem("userId")
+      const {data} = await axios.post("http://localhost:8000/api/verifyOtp" , {Otp : values.otp , userId : userId } , {withCredentials : true});
+      // console.log(data);
+      const {success , message} = data;
+      console.log(data);
+      if(success){
+        console.log("Success");
+        navigate("/home");
+      } 
+    }
+    catch(e){
+      console.log(e);
+    }
+  };
+
   const onSubmit = async (values) => {
     try {
       // const {email ,username , password} = values;
@@ -87,7 +104,7 @@ const SignUp = () => {
         <Modal.Header>otp</Modal.Header>
         <Modal.Body>
           <div className="m-10">
-            <OtpForm closeModal={() => setOpenModal(false)} />
+            <OtpForm closeModal={() => setOpenModal(false)} onSubmit={onSubmitOtp}/>
           </div>
         </Modal.Body>
       </Modal>
