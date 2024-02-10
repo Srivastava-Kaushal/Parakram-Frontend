@@ -1,7 +1,7 @@
 // Footer.js
 import React from "react";
 import "./footer.css";
-// import logo from "./srijan Light (3).png";
+import logo from "../../assets/logo-svg.svg";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -10,9 +10,9 @@ const Footer = () => {
       <footer className="footer-distributed">
         <div className="footer-left">
           <h3>
-            <span>{/* <img src={logo} width="150px" /> */}</span> 2024
+            <img src={logo} width="150px" />
           </h3>
-          <a
+          {/* <a
             href="https://drive.google.com/file/d/1XWCCAvG8_vHOTChQzw3sT0nUJuZRuPog/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
@@ -36,23 +36,25 @@ const Footer = () => {
                 Srijan Brochure
               </p>
             </button>
-          </a>
+          </a> */}
           <p className="footer-links text-[#ffffff] hover:text-yellow-400">
-            <a href="#" className="link-1">
+            <a href="/" className="link-1">
               Home
             </a>
             {"\t"}
-            <a href="#">Events </a>
-            {"\t"} <a href="#">Merchandise </a>
-            {"\t"} <a href="#">Teams </a>
+            <a href="/events">Events </a>
+            {"\t"} <a href="/merchandise">Merchandise </a>
+            {"\t"} <a href="/sponsors">Sponsors </a>
             {"\t"}
-            <a href="#">Contact </a>
+            <a href="/accomodation">Accomodation </a>
           </p>
           <p className="footer-company-name">
-            Cultural Center
+            
+            <br/>
+            PARAKRAM '24 - Defy odds, define legacy
             <br />
-            Biggest socio-cultural fest of eastern India <br /> 2nd to 4th
-            February, 2024
+            <br />
+            EAST INDIA'S LARGEST SPORTS FESTIVAL, IIT (ISM), DHANBAD
           </p>
         </div>
 
@@ -66,9 +68,9 @@ const Footer = () => {
 
           <div>
             <p>
-              <a href="mailto : srijan@iitism.ac.in">
+              <a href="mailto : prakram@iitism.ac.in">
                 <i className="fa-sharp fa-solid fa-envelope"></i>{" "}
-                srijan@iitism.ac.in{" "}
+                prakram@iitism.ac.in{" "}
               </a>
             </p>
           </div>
@@ -88,7 +90,7 @@ const Footer = () => {
             {" "}
             <a href="mailto : sponsorship.srijan@iitism.ac.in">
               <i className="fa-sharp fa-solid fa-envelope"></i>
-              sponsorship.srijan@iitism.ac.in
+              sponsorship.prakram@iitism.ac.in
             </a>
           </p>
           <p className="footer-company-about">
