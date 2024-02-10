@@ -1,9 +1,11 @@
 import Form from "../components/RegistrationForm/form";
 
-export const RegisterPage = () => {
+const RegisterPage = () => {
   return (
     <>
-      <Form />
+      <Form maxTeamLength={10} minTeamLength={8} />
     </>
   );
 };
+
+export default RegisterPage;
