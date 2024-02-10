@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Footer from "../footer/Footer";
-import { AnimatePresence } from "framer-motion";
+// import Footer from "../footer/Footer";
+// import { AnimatePresence } from "framer-motion";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
