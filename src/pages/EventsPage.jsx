@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import EventsPageImg from '../assets/Images/EventsPageImg.jpg';
 import EventsList from '../components/EventsPageComponent/EventsList';
 import transition from '../transition';
+import { animateScroll as scroll } from "react-scroll";
+import { useEffect } from 'react';
 
 const container = {
 	hidden: { opacity: 0 },
@@ -20,6 +22,10 @@ const item = {
 };
 
 const Events = () => {
+	
+	useEffect(() => {
+		scroll.scrollToTop({ duration: 1000 });
+	  }, []);
 	return (
 		<>
 			<motion.div

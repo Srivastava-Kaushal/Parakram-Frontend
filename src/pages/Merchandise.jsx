@@ -2,13 +2,19 @@
 
 import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Modal } from "flowbite-react";
 import transition from "../transition";
+import { animateScroll as scroll } from "react-scroll";
+
 
 const MerchandisePage = () => {
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+  
+  useEffect(() => {
+    scroll.scrollToTop({ duration: 1000 });
+  }, []);
 
   const [data, setData] = useState({
     size: "S",
