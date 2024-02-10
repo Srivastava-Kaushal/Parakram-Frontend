@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -6,19 +6,38 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import { AnimatePresence } from "framer-motion";
 import logo from "../../assets/logo-svg.svg";
 
-const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Events", href: "/events", current: false },
-  { name: "Merchandise", href: "/merchandise", current: false },
-  { name: "Sponsors", href: "/sponsors", current: false },
-  { name: "Accomodation", href: "/accomodation", current: false },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const NavBar = () => {
+  const [navigation, setnavigation] = useState([
+    { name: "Home", href: "/", current: true },
+    { name: "Events", href: "/events", current: false },
+    { name: "Merchandise", href: "/merchandise", current: false },
+    { name: "Sponsors", href: "/sponsors", current: false },
+    { name: "Accomodation", href: "/accomodation", current: false },
+  ]);
+
+  const changeNavigation = (e) => {
+    let name = e.currentTarget.className;
+    setnavigation([
+      { name: "Home", href: "/", current: name === "Home" },
+      { name: "Events", href: "/events", current: name === "Events" },
+      {
+        name: "Merchandise",
+        href: "/merchandise",
+        current: name === "Merchandise",
+      },
+      { name: "Sponsors", href: "/sponsors", current: name === "Sponsors" },
+      {
+        name: "Accomodation",
+        href: "/accomodation",
+        current: name === "Accomodation",
+      },
+    ]);
+  };
+
   return (
     <Fragment>
       <Disclosure as="nav" className="">
@@ -44,20 +63,21 @@ const NavBar = () => {
                   </Link>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
-                      {navigation.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className={classNames(
-                            item.current
-                              ? "bg-[#3C91E6] text-white"
-                              : "text-indigo-400 hover:underline hover:decoration-[#3C91E6] hover:backdrop-opacity-10",
-                            "rounded-md px-3 py-2 text-base font-medium"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </Link>
+                      {navigation.map((item, ind) => (
+                        <span onClick={changeNavigation} className={item.name}>
+                          <Link
+                            to={item.href}
+                            className={classNames(
+                              item.current
+                                ? "bg-[#3C91E6] text-white"
+                                : "text-indigo-400 hover:underline hover:decoration-[#3C91E6] hover:backdrop-opacity-10",
+                              "rounded-md px-3 py-2 text-base font-medium"
+                            )}
+                            aria-current={item.current ? "page" : undefined}
+                          >
+                            {item.name}
+                          </Link>
+                        </span>
                       ))}
                     </div>
                   </div>
@@ -127,9 +147,9 @@ const NavBar = () => {
 
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 px-2 pb-3 pt-2">
-                {navigation.map((item) => (
+                {navigation.map((item, ind) => (
                   <Link
-                    key={item.name}
+                    key={ind}
                     to={item.href}
                     className={classNames(
                       item.current
