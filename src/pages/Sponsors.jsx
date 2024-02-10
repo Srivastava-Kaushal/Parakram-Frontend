@@ -18,8 +18,9 @@ import american_swan from '../assets/Images/logos/american_swan.png'
 import volvo from '../assets/Images/logos/volvo.jpg'
 import shell from '../assets/Images/logos/shell.png'
 import canara_bank from '../assets/Images/logos/canara_bank.png'
+import transition from '../transition';
 
-export default function Sponsers() {
+function Sponsors() {
 	const StyledImg = styled('img')({
 		width: '130px',
 		height: '100px',
@@ -229,3 +230,4 @@ export default function Sponsers() {
 		</>
 	);
 }
+export default transition(Sponsors)

@@ -1,4 +1,5 @@
 import Form from "../components/RegistrationForm/form";
+import transition from "../transition";
 
 const RegisterPage = () => {
   return (
@@ -8,4 +9,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+export default transition(RegisterPage);
