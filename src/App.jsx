@@ -32,7 +32,7 @@ function App() {
           <Route path="/sponsors" element={<Sponsers />} />
         </Routes>
       </AnimatePresence>
-      <Footer/>
+      <Footer />
     </>
   );
 }
