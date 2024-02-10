@@ -13,7 +13,7 @@ function AccCard(props) {
     window.alert(jsonobj);
   };
   return (
-    <>
+    <div>
       <div class="card">
         <span class="card__hover">{props.title}</span>
 
@@ -107,7 +107,7 @@ function AccCard(props) {
                       // animate={{ y: 0, opacity: 1 }}
                       // transition={{ duration: 1 }}
                       onSubmit={paymentHandler}
-                      className=" w-full h-full rounded-lg bg-[#7CB9E8] shadow-xl px-5 py-5 backdrop-blur-lg text-white font-semibold"
+                      className=" w-full h-full rounded-lg bg-[black] shadow-xl px-5 py-5 backdrop-blur-lg text-white font-semibold"
                     >
                       <div className="mb-4">
                         <label htmlFor="size" className="block mb-2 text-sm">
@@ -151,7 +151,7 @@ function AccCard(props) {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default AccCard;
