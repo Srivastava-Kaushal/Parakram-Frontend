@@ -28,7 +28,7 @@ function Accomodation() {
     },
   ];
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center bg-black">
       <div className="my-20 grid sm:grid-cols-4 sm:gap-x-8 grid-cols-1 gap-y-4">
         {CardDetails.map((val, ind) => {
           return (
