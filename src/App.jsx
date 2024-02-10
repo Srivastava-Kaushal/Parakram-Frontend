@@ -19,6 +19,7 @@ import Accomodation from "./pages/Accomodation";
 import NoPage from "./pages/NoPage";
 
 function App() {
+  //hello
   const location = useLocation();
   return (
     <>
