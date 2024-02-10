@@ -1,7 +1,6 @@
-import Footer from "../components/footer/Footer";
 import transition from "../transition";
 
-const Landing = () => {
+const LandingPage = () => {
   return (
     <>
       <div className="min-h-[400px]"></div>
@@ -9,4 +8,5 @@ const Landing = () => {
   );
 };
 
-export default transition(Landing);
+const Landing = transition(LandingPage);
+export default Landing;

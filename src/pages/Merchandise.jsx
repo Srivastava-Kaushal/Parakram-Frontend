@@ -1,13 +1,12 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
-import { motion, useAnimate } from "framer-motion";
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { Button, Modal } from "flowbite-react";
 import transition from "../transition";
 
-const Merchandise = () => {
+const MerchandisePage = () => {
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
@@ -171,4 +170,5 @@ const Merchandise = () => {
   );
 }
 
-export default transition(Merchandise);
+const Merchandise = transition(MerchandisePage);
+export default Merchandise;
