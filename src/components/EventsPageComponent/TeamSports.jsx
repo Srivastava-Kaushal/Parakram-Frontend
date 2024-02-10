@@ -9,12 +9,12 @@ import KabaddiImg from '../../assets/Images/Kabaddi.jpg'
 const TeamSports = () => {
 	return (
 		<div className='w-full flex flex-col items-center'>
-			<SportBanner sportImg={FootballImg} sportName={"Football"} eventLink={"/"}/>
-			<SportBanner sportImg={CricketImg} sportName={"Cricket"} eventLink={"/"}/>
-			<SportBanner sportImg={HockeyImg} sportName={"Hockey"} eventLink={"/"}/>
-			<SportBanner sportImg={VolleyballImg} sportName={"Volleyball"} eventLink={"/"}/>
-			<SportBanner sportImg={BasketballImg} sportName={"Basketball"} eventLink={"/"}/>
-			<SportBanner sportImg={KabaddiImg} sportName={"Kabaddi"} eventLink={"/"}/>
+			<SportBanner sportImg={FootballImg} sportName={"Football"} eventLink={"/register"}/>
+			<SportBanner sportImg={CricketImg} sportName={"Cricket"} eventLink={"/register"}/>
+			<SportBanner sportImg={HockeyImg} sportName={"Hockey"} eventLink={"/register"}/>
+			<SportBanner sportImg={VolleyballImg} sportName={"Volleyball"} eventLink={"/register"}/>
+			<SportBanner sportImg={BasketballImg} sportName={"Basketball"} eventLink={"/register"}/>
+			<SportBanner sportImg={KabaddiImg} sportName={"Kabaddi"} eventLink={"/register"}/>
 		</div>
 	);
 };
