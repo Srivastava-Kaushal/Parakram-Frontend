@@ -166,7 +166,7 @@ const LandingPage = () => {
                       className="h-22 font-bold overflow-x-hidden glow lg:text-4xl text-6xl text-[#fbe10e] sm:px-16 lg:px-48"
                     >
                       {/* <Countdown /> */}
-                      Parakram '24
+                      Parakram &apos;24
                     </motion.p>
                     <motion.span
                       variants={textAnimate2}
