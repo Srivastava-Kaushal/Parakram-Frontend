@@ -36,7 +36,7 @@ function App() {
           <Route path="/accomodation" element={<Accomodation/>} />
         </Routes>
       </AnimatePresence>
-      <Footer/>
+      <Footer />
     </>
   );
 }

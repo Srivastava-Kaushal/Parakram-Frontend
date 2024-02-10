@@ -1,4 +1,5 @@
 import SignIn from "../../components/authComp/signIn";
+import transition from "../../transition";
 
 const SignUpPage = () => {
   return (
@@ -8,4 +9,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default transition(SignUpPage);
