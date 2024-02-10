@@ -1,9 +1,6 @@
 import {
   Route,
-  RouterProvider,
   Routes,
-  createBrowserRouter,
-  createRoutesFromElements,
   useLocation,
 } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
@@ -27,11 +24,14 @@ function App() {
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route index element={<Landing />} />
+          <Route path="/" element={<Landing />} />
           <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="/sponsors" element={<Sponsers />} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/accomodation" element={<Accomodation/>} />
         </Routes>

@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Footer from "../footer/Footer";
-import { AnimatePresence } from "framer-motion";
+// import Footer from "../footer/Footer";
+// import { AnimatePresence } from "framer-motion";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -22,12 +22,12 @@ const NavBar = () => {
     <Fragment>
       <Disclosure as="nav" className="">
         {({ open }) => (
-          <>
+          <div className="bg-black"> 
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -39,7 +39,7 @@ const NavBar = () => {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-2xl font-bold">
                   <Link to="/" className="flex flex-shrink-0 items-center">
-                    <span className="text-green-600">Parakram</span>
+                    <span className="text-green-200">Parakram</span>
                   </Link>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
@@ -50,7 +50,7 @@ const NavBar = () => {
                           className={classNames(
                             item.current
                               ? "bg-[#3C91E6] text-white"
-                              : "text-gray-900 hover:underline hover:decoration-[#3C91E6] hover:backdrop-opacity-10",
+                              : "text-yellow-500 hover:underline hover:decoration-[#3C91E6] hover:backdrop-opacity-10",
                             "rounded-md px-3 py-2 text-base font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
@@ -134,7 +134,7 @@ const NavBar = () => {
                 ))}
               </div>
             </Disclosure.Panel>
-          </>
+          </div>
         )}
       </Disclosure>
 
