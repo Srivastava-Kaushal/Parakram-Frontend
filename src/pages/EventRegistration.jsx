@@ -1,9 +1,11 @@
 import Form from "../components/RegistrationForm/form";
 
-export const RegisterPage = () => {
+const RegisterPage = () => {
   return (
     <>
       <Form />
     </>
   );
 };
+
+export default RegisterPage

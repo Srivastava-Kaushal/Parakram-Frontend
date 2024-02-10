@@ -7,7 +7,9 @@ import {
 import NavBar from './components/navbar/NavBar';
 import Landing from './pages/Landing';
 import Merchandise from './pages/Merchandise';
-import { RegisterPage } from "./pages/EventRegistration";
+import RegisterPage from "./pages/EventRegistration";
+import EventsPage from './pages/EventsPage';
+
 
 function App() {
   const router = createBrowserRouter(
@@ -16,7 +18,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/merchandise" element={<Merchandise />} />
         <Route path="/register" element={<RegisterPage />} />
-
+		<Route path="/events" element={<EventsPage />} />
+		
         {/* add component/pages here */}
       </Route>
     )
