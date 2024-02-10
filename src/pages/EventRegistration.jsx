@@ -1,7 +1,7 @@
 import Form from "../components/RegistrationForm/form";
 import transition from "../transition";
 
-const RegisterPage = () => {
+const Register = () => {
   return (
     <>
       <Form maxTeamLength={10} minTeamLength={8} />
@@ -9,4 +9,5 @@ const RegisterPage = () => {
   );
 };
 
-export default transition(RegisterPage);
+const RegisterPage = transition(Register);
+export default RegisterPage;
