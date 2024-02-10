@@ -1,4 +1,4 @@
-import SignUpForm from "../components/ProfileFormComp/SignUpForm";
+import SignUpForm from "../components/ProfileFormComp/ProfileBuild";
 
 const ProfilePage = () => {
   return (
