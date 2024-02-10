@@ -12,6 +12,9 @@ import Merchandise from "./pages/Merchandise";
 import RegisterPage from "./pages/EventRegistration";
 import EventsPage from "./pages/EventsPage";
 import ProfilePage from "./pages/profileBuild";
+import SignUp from "./pages/auth/signUpPage";
+import SignIn from "./pages/auth/signInPage";
+import Sponsers from "./pages/Sponsors";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/footer/Footer";
 
