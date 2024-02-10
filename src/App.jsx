@@ -1,13 +1,13 @@
 import {
-	Route,
-	RouterProvider,
-	createBrowserRouter,
-	createRoutesFromElements,
-} from 'react-router-dom';
-import NavBar from './components/navbar/NavBar';
-import Landing from './pages/Landing';
-import Merchandise from './pages/Merchandise';
-import { RegisterPage } from "./pages/EventRegistration";
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+import NavBar from "./components/navbar/NavBar";
+import Landing from "./pages/Landing";
+import Merchandise from "./pages/Merchandise";
+import RegisterPage from "./pages/EventRegistration";
 
 function App() {
   const router = createBrowserRouter(
