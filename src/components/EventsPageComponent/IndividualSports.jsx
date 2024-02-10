@@ -13,16 +13,16 @@ import KarateImg from '../../assets/Images/Karate.jpg'
 const IndividualSports = () => {
     return (
         <div className='w-full flex flex-col items-center'>
-            <SportBanner sportImg={AthleticsImg} sportName={"Athletics"} eventLink={"/"}/>
-            <SportBanner sportImg={BadmintonImg} sportName={"Badminton"} eventLink={"/"}/>
-            <SportBanner sportImg={TableTennisImg} sportName={"Table Tennis"} eventLink={"/"}/>
-            <SportBanner sportImg={SquashImg} sportName={"Squash"} eventLink={"/"}/>
-            <SportBanner sportImg={ChessImg} sportName={"Chess"} eventLink={"/"}/>
-            <SportBanner sportImg={TennisImg} sportName={"Tennis"} eventLink={"/"}/>
-            <SportBanner sportImg={WeightliftingImg} sportName={"Weightlifting"} eventLink={"/"}/>
-            <SportBanner sportImg={PowerliftingImg} sportName={"Power Lifting"} eventLink={"/"}/>
-            <SportBanner sportImg={BoxingImg} sportName={"Boxing"} eventLink={"/"}/>
-            <SportBanner sportImg={KarateImg} sportName={"Karate"} eventLink={"/"}/>
+            <SportBanner sportImg={AthleticsImg} sportName={"Athletics"} eventLink={"/register"}/>
+            <SportBanner sportImg={BadmintonImg} sportName={"Badminton"} eventLink={"/register"}/>
+            <SportBanner sportImg={TableTennisImg} sportName={"Table Tennis"} eventLink={"/register"}/>
+            <SportBanner sportImg={SquashImg} sportName={"Squash"} eventLink={"/register"}/>
+            <SportBanner sportImg={ChessImg} sportName={"Chess"} eventLink={"/register"}/>
+            <SportBanner sportImg={TennisImg} sportName={"Tennis"} eventLink={"/register"}/>
+            <SportBanner sportImg={WeightliftingImg} sportName={"Weightlifting"} eventLink={"/register"}/>
+            <SportBanner sportImg={PowerliftingImg} sportName={"Power Lifting"} eventLink={"/register"}/>
+            <SportBanner sportImg={BoxingImg} sportName={"Boxing"} eventLink={"/register"}/>
+            <SportBanner sportImg={KarateImg} sportName={"Karate"} eventLink={"/register"}/>
         </div>
     )
 }
