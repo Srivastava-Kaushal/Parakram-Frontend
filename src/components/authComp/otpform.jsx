@@ -5,7 +5,7 @@ import { Button } from "flowbite-react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const OtpForm = () => {
+const OtpForm = (props) => {
   const navigate = useNavigate();
   const onSubmit = async (values) => {
     try{
@@ -40,6 +40,7 @@ const OtpForm = () => {
         <Form className="max-w-md mx-auto">
           <MyTextInput label="otp" name="otp" type="text" placeholder="" />
           <Button type="submit">Submit</Button>
+          <Button onClick={onClick}>Resend Otp</Button>
         </Form>
       </Formik>
     </div>
