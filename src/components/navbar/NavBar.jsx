@@ -128,9 +128,8 @@ const NavBar = () => {
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
-                  <Disclosure.Button
+                  <Link
                     key={item.name}
-                    as="Link"
                     to={item.href}
                     className={classNames(
                       item.current
@@ -141,7 +140,7 @@ const NavBar = () => {
                     aria-current={item.current ? "page" : undefined}
                   >
                     {item.name}
-                  </Disclosure.Button>
+                  </Link>
                 ))}
               </div>
             </Disclosure.Panel>
