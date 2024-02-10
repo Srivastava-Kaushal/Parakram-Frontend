@@ -7,11 +7,17 @@ import img7 from "../assets/images/bas6.jpg";
 import img8 from "../assets/images/ls4.jpg";
 import img9 from "../assets/images/bas4.jpg";
 import transition from "../transition";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 const LandingPage = () => {
   const [loading, setLoading] = useState(true);
   const [show, setShow] = useState(false);
+
+  
+  useEffect(() => {
+    scroll.scrollToTop({ duration: 1000 });
+  }, []);
 
   setTimeout(() => {
     setLoading(false);
