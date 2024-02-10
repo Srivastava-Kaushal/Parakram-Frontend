@@ -5,11 +5,24 @@ const MyCheckbox = ({ children, ...props }) => {
   // Formik does this too! When you specify `type` to useField(), it will
   // return the correct bag of props for you -- a `checked` prop will be included
   // in `field` alongside `name`, `value`, `onChange`, and `onBlur`
+  // <div class="flex items-center h-5">
+  //     <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+  //   </div>
   const [field, meta] = useField({ ...props, type: "checkbox" });
   return (
-    <div>
-      <label className="checkbox-input">
-        <input type="checkbox" {...field} {...props} />
+    <div className="flex items-start mb-5">
+      <div className="flex items-center h-5">
+        <input
+          className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+          type="checkbox"
+          {...field}
+          {...props}
+        />
+      </div>
+      <label
+        htmlFor="teamleader"
+        className="checkbox-input ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >
         {children}
       </label>
       {meta.touched && meta.error ? (
