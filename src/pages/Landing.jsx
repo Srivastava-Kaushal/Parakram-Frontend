@@ -1,11 +1,11 @@
 import logoSvg from "../assets/logo-svg.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { Carousel } from "flowbite-react";
-import img5 from "../assets/images/cri1.jpg";
-import img6 from "../assets/images/cri3.jpg";
-import img7 from "../assets/images/bas6.jpg";
-import img8 from "../assets/images/ls4.jpg";
-import img9 from "../assets/images/bas4.jpg";
+// import img5 from "../assets/images/cri1.jpg";
+// import img6 from "../assets/images/cri3.jpg";
+// import img7 from "../assets/images/bas6.jpg";
+// import img8 from "../assets/images/ls4.jpg";
+// import img9 from "../assets/images/bas4.jpg";
 import transition from "../transition";
 import { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
@@ -14,7 +14,6 @@ const LandingPage = () => {
   const [loading, setLoading] = useState(true);
   const [show, setShow] = useState(false);
 
-  
   useEffect(() => {
     scroll.scrollToTop({ duration: 1000 });
   }, []);
@@ -100,7 +99,7 @@ const LandingPage = () => {
   };
   return (
     <>
-      <motion.div className="bg-[#0d0c06]">
+      <motion.div className="bg-[#1c100c]">
         <AnimatePresence>
           {loading && (
             <>
@@ -114,20 +113,20 @@ const LandingPage = () => {
                 <motion.img
                   variants={load}
                   className="h-[35vh] absolute top-10 left-10"
-                  src={img5}
+                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624668/ls1_d4fk6h.jpg"
                   alt=""
                 />
                 <motion.img
                   variants={load}
                   layout
                   className="h-[35vh] absolute bottom-10 right-10 "
-                  src={img6}
+                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624704/cric-ls4_e6xiv5.jpg"
                   alt=""
                 />
                 <motion.img
                   variants={load}
                   className="h-[80vh] bottom-10 right-10 z-10"
-                  src={img7}
+                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624729/ath4_afxdsg.jpg"
                   alt=""
                 />
               </motion.div>
@@ -145,15 +144,15 @@ const LandingPage = () => {
                   transition: { duration: 1 },
                 }}
                 // style="background-image: url('../assets/images/image-4.jpg');"
-                className="bg-[url('assets/images/bas4.jpg')] bg-no-repeat bg-cover h-screen"
+                className="bg-[url('https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624670/ft6_ow1y7h.jpg')] bg-no-repeat bg-cover h-screen"
               >
-                <motion.div className="px-4 flex justify-center items-center gap-1 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                  <motion.div className="bg-opacity-50 backdrop-blur-lg w-[60vw] rounded-3xl">
+                <motion.div className="px-4 flex justify-center items-center gap-1 mx-auto max-w-screen-xl text-center py-24 lg:py-40">
+                  <motion.div className="bg-opacity-10 backdrop-blur w-[60vw] rounded-3xl">
                     <motion.h1
                       variants={textAnimate1}
                       initial="hidden"
                       animate="show"
-                      className="text-6xl flex justify-center font-extrabold tracking-tight leading-none uppercase text-white md:text-5xl lg:text-6xl"
+                      className="text-6xl flex justify-center font-extrabold tracking-tight leading-none uppercase text-[#f2f1ef] md:text-5xl lg:text-6xl"
                     >
                       <img src={logoSvg} width="450px" />
                     </motion.h1>
@@ -161,26 +160,33 @@ const LandingPage = () => {
                       variants={textAnimate2}
                       initial="hidden"
                       animate="show"
-                      className="mb-2 overflow-x-hidden text-xl font-normal text-[#efede0] lg:text-2xl sm:px-16 py-5 lg:px-48"
+                      className="font-bold overflow-hidden glow lg:text-6xl text-4xl text-[#ffc946] sm:px-12 lg:px-30"
                     >
-                      Defy odds, Define Legacy
+                      {/* <Countdown /> */}
+                      Parakram '24
                     </motion.p>
                     <motion.p
                       variants={textAnimate2}
                       initial="hidden"
                       animate="show"
-                      className="h-22 font-bold overflow-x-hidden glow lg:text-4xl text-6xl text-[#fbe10e] sm:px-16 lg:px-48"
+                      className="mb-2 overflow-x-hidden lg:text-5xl text-3xl font-bold text-[#b92f2f] sm:px-12 py-2 lg:px-30"
                     >
-                      {/* <Countdown /> */}
-                      Parakram '24
+                      Defy odds, Define Legacy
                     </motion.p>
+
                     <motion.span
                       variants={textAnimate2}
                       initial="hidden"
                       animate="show"
-                      className="h-auto  overflow-y-hidden my-5 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fbe10e] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl"
+                      className="h-auto  overflow-y-hidden my-3 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fbe10e] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl"
                     >
-                      March 2024
+                      <button
+                        type="button"
+                        disabled
+                        className="text-[#f2f1ef] bg-gradient-to-br from-[#ffc946] to-[#b92f2f] hover:bg-gradient-to-bl focus:ring-1 focus:outline-none focus:ring-pink-200  font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 disabled"
+                      >
+                        March 2024
+                      </button>
                     </motion.span>
                     <motion.button
                       variants={textAnimate2}
@@ -204,7 +210,7 @@ const LandingPage = () => {
                   alt=""
                 /> */}
               </motion.div>
-              <motion.div className="max-w-screen bg-cover flex-col justify-center items-center bg-[#0d0c06] pb-20 overflow-hidden">
+              <motion.div className="max-w-screen bg-cover flex-col justify-center items-center bg-[#1c100c] pb-20 overflow-hidden">
                 <motion.div
                   initial={{ opacity: 0, x: 200 }}
                   whileInView={{
@@ -213,7 +219,7 @@ const LandingPage = () => {
                     transition: { duration: 1 },
                   }}
                   // viewport={{ amount: 0.5 }}
-                  className=" flex justify-center items-center w-screen text-white bg-opacity-50 backdrop-blur-xl rounded-lg text-xl px-10 py-10 my-10"
+                  className=" flex justify-center items-center w-screen text-[#f2f1ef] bg-opacity-50 backdrop-blur-xl rounded-lg text-xl px-10 py-10 my-10 text-justify"
                 >
                   Parakram is the Annual Inter-College Sports Festival of
                   IIT(ISM) Dhanbad. The 3-day Sports Festival of IIT(ISM)
@@ -235,47 +241,50 @@ const LandingPage = () => {
                     <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
-                      src={img5}
+                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624668/ls1_d4fk6h.jpg"
                       alt=""
                     />
                     <motion.img
                       variants={imgVariant}
                       layout
                       className="h-[40vh] w-[40vw] object-cover"
-                      src={img6}
+                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624704/cric-ls4_e6xiv5.jpg"
                       alt=""
                     />
                     <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
-                      src={img7}
+                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624729/ath4_afxdsg.jpg"
                       alt=""
                     />
                     <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
-                      src={img8}
+                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624727/ls2_zkgyqn.jpg"
+                      alt=""
+                    />
+                    {/* <motion.img
+                      variants={imgVariant}
+                      className="h-[40vh] w-[40vw] object-cover"
+                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624702/cri3_qicxug.jpg"
                       alt=""
                     />
                     <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
-                      src={img9}
+                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624668/ls1_d4fk6h.jpg"
                       alt=""
-                    />
-                    <motion.img
-                      variants={imgVariant}
-                      className="h-[40vh] w-[40vw] object-cover"
-                      src={img5}
-                      alt=""
-                    />
+                    /> */}
                   </motion.div>
                 </motion.div>
               </motion.div>
-              <div className="bg-[#060917] h-screen flex justify-center items-center pt-20">
+              <div className="text-5xl py-5 text-center text-[#f2f1ef] bg-[#0f0d09] font-bold">
+                Memories
+              </div>
+              <div className="bg-[#0f0d09] h-screen flex justify-center items-center pt-10 pb-20">
                 <Carousel className="w-[80vw]">
                   <img
-                    src={img5}
+                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624668/ls1_d4fk6h.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -284,7 +293,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src={img6}
+                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624704/cric-ls4_e6xiv5.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -293,7 +302,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src={img7}
+                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624729/ath4_afxdsg.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -302,7 +311,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src={img8}
+                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624727/ls2_zkgyqn.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -311,7 +320,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src={img9}
+                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624702/cri3_qicxug.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",

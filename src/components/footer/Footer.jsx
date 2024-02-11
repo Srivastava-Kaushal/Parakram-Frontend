@@ -24,20 +24,17 @@ function FooterT() {
           ></path>
         </svg>
       </div> */}
-      <footer className="bg-black">
+      <footer className="bg-[#1c100c]">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 flex-col justify-center">
           <div className="md:flex md:justify-between justify-center">
             <div className="mb-6 md:mb-0 flex-col justify-center items-center">
               <a href="/" className="flex items-center justify-center">
-                <img
-                  src={logo}
-                  className="md:h-20 h-[50px] me-3"
-                  alt="#"
-                />
+                <img src={logo} className="md:h-20 h-[50px] me-3" alt="#" />
               </a>
-              <div className="text-[#efede0] font-medium text-sm md:text-base py-5 px-10 md:pr-10 flex justify-center items-center text-center">
-                PARAKRAM '24 Defy odds, define legacy
-                EAST INDIA'S LARGEST SPORTS FESTIVAL, IIT (ISM), DHANBAD
+              <div className="text-[#f2f1ef] font-medium text-sm md:text-base py-5 px-10 md:pr-10 flex justify-center items-center text-center">
+                PARAKRAM '24 <br />
+                Defy odds, define legacy EAST INDIA'S LARGEST SPORTS FESTIVAL,
+                IIT (ISM), DHANBAD
               </div>
               {/* <a
               href="https://drive.google.com/file/d/1XWCCAvG8_vHOTChQzw3sT0nUJuZRuPog/view?usp=sharing"
@@ -74,18 +71,18 @@ function FooterT() {
                     <li className="my-4">
                       <a
                         href="mailto:parakram@iitism.ac.in"
-                        className="hover:underline text-xs sm:text-sm md:text-base text-[#fbe10e] flex items-center justify-start gap-x-3 sm:gap-x-4"
+                        className="hover:underline text-xs sm:text-sm md:text-base text-[#e6aa1e] flex items-center justify-start gap-x-3 sm:gap-x-4"
                       >
-                        <IoMdMail className="text-[#dad3a5] text-xl sm:text-2xl" />
+                        <IoMdMail className="text-[#e6aa1e] text-xl sm:text-2xl" />
                         parakram@iitism.ac.in
                       </a>
                     </li>
                     <li className="my-4">
                       <a
                         href="mailto:srijan@iitism.ac.in"
-                        className="hover:underline text-xs sm:text-sm md:text-base text-[#fbe10e] flex items-center justify-start gap-x-3 sm:gap-x-5"
+                        className="hover:underline text-xs sm:text-sm md:text-base text-[#e6aa1e] flex items-center justify-start gap-x-3 sm:gap-x-5"
                       >
-                        <FaPhoneAlt className="text-[#dad3a5] text-lg sm:text-xl" />
+                        <FaPhoneAlt className="text-[#e6aa1e] text-lg sm:text-xl" />
                         9637111550
                       </a>
                     </li>
@@ -94,7 +91,7 @@ function FooterT() {
                         href="https://www.iitism.ac.in/"
                         className="hover:underline text-xs sm:text-sm md:text-base flex items-center justify-start gap-x-2 sm:gap-x-4"
                       >
-                        <FaMapMarkerAlt className="text-[#dad3a5] text-5xl sm:text-4xl" />
+                        <FaMapMarkerAlt className="text-[#e6aa1e] text-5xl sm:text-4xl" />
                         Indian Institute of Technology (ISM) Dhanbad - 826004,
                         Jharkhand, India
                       </a>
@@ -134,18 +131,18 @@ function FooterT() {
             </div>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div className="sm:flex sm:items-center sm:justify-between text-[#dad3a5]">
+          <div className="sm:flex sm:items-center sm:justify-between text-[#ffc946]">
             <div className="flex mt-4 justify-around sm:mt-0 text-3xl gap-x-5">
               <a
                 href="https://www.facebook.com/ism.srijan"
-                className=" hover:text-[#c9bc57]"
+                className=" hover:text-[#e6aa1e]"
               >
                 <FaFacebookF />
                 <span className="sr-only">Facebook page</span>
               </a>
               <a
                 href="https://www.instagram.com/srijaniitism/"
-                className=" hover:text-[#c9bc57] ms-5"
+                className=" hover:text-[#e6aa1e] ms-5"
               >
                 <FaInstagram />
                 <span className="sr-only">Instagram page</span>
@@ -158,7 +155,7 @@ function FooterT() {
                 <span className="sr-only">LinkedIn page</span>
               </a> */}
             </div>
-            <div>
+            {/* <div>
               <Link to="/privacy-policy" className="hover:underline mx-5">
                 Privacy Policy
               </Link>
@@ -171,8 +168,7 @@ function FooterT() {
               >
                 Returns & Refunds Policy
               </Link>
-
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
