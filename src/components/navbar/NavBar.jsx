@@ -42,7 +42,7 @@ const NavBar = () => {
     <Fragment>
       <Disclosure as="nav" className="">
         {({ open }) => (
-          <div className="bg-black">
+          <div className="bg-[#0f0d09]">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -69,8 +69,8 @@ const NavBar = () => {
                             to={item.href}
                             className={classNames(
                               item.current
-                                ? "bg-[#3C91E6] text-white"
-                                : "text-indigo-400 hover:underline hover:decoration-[#3C91E6] hover:backdrop-opacity-10",
+                                ? "bg-[#584212] text-[#f2f1ef]"
+                                : "text-[#f2f1ef] hover:underline hover:decoration-[#ffc946] hover:backdrop-opacity-10",
                               "rounded-md px-3 py-2 text-base font-medium"
                             )}
                             aria-current={item.current ? "page" : undefined}
