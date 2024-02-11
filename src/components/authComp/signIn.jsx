@@ -1,6 +1,6 @@
 import { Formik, Form } from "formik";
 import MyTextInput from "../FormComps/input";
-import { Button, Modal } from "flowbite-react";
+import { Modal } from "flowbite-react";
 import validationSchema from "./validation";
 import { useState } from "react";
 import SetNewPass from "./setNewPass";
@@ -42,14 +42,18 @@ const SignIp = () => {
 
   const navigate = useNavigate();
   const onSubmit = async (values) => {
-    const {data} = await axios.post("http://localhost:8000/api/login" , values , {withCredentials : true});
+    const { data } = await axios.post(
+      "http://localhost:8000/api/login",
+      values,
+      { withCredentials: true }
+    );
     console.log("Hello");
     navigate("/home");
   };
 
   return (
-    <div>
-      <h1>Sign In</h1>
+    <div className="container max-w-lg m-auto">
+      <h1 className="heading">Sign In</h1>
       <Formik
         initialValues={{
           email: "",
@@ -61,7 +65,7 @@ const SignIp = () => {
         }}
       >
         <>
-          <Form className="max-w-md mx-auto">
+          <Form autoComplete="off" className="form">
             <MyTextInput
               label="email"
               name="email"
@@ -76,14 +80,17 @@ const SignIp = () => {
               placeholder=""
             />
 
-            <Button type="submit">Submit</Button>
-            <Button
+            <button className="login-button" type="submit">
+              Submit
+            </button>
+            <span
+              className="cursor-pointer forgot-password"
               onClick={() => {
                 setOpenModal([true, false, false]);
               }}
             >
               forgot password??
-            </Button>
+            </span>
           </Form>
         </>
       </Formik>

@@ -9,7 +9,7 @@ const ProfilePage = () => {
   }, []);
   
   return (
-    <div>
+    <div className=" w-full bg-black">
       <SignUpForm />
     </div>
   );
