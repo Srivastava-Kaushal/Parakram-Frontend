@@ -33,8 +33,8 @@ const SignUp = () => {
   };
 
   return (
-    <div>
-      <h1>Sign Up</h1>
+    <div className="container max-w-lg  m-auto ">
+      <h1 className="heading">Sign Up</h1>
       <Formik
         initialValues={{
           email: "",
@@ -48,7 +48,7 @@ const SignUp = () => {
         {(f) => {
           return (
             <>
-              <Form autoComplete="off" className="max-w-md mx-auto">
+              <Form autoComplete="off" className="form">
                 <MyTextInput
                   label="email"
                   name="email"
@@ -76,7 +76,9 @@ const SignUp = () => {
                   placeholder=""
                 />
 
-                <Button type="submit">Submit</Button>
+                <button type="submit" className="login-button">
+                  Submit
+                </button>
               </Form>
             </>
           );

@@ -28,7 +28,7 @@ const OtpForm = (props) => {
   };
 
   return (
-    <div>
+    <div className="container max-w-lg m-auto">
       <Formik
         initialValues={{
           otp: "",
@@ -40,10 +40,17 @@ const OtpForm = (props) => {
           onSubmit(values);
         }}
       >
-        <Form autoComplete="off" className="max-w-md mx-auto">
+        <Form autoComplete="off" className="form">
           <MyTextInput label="otp" name="otp" type="text" placeholder="" />
-          <Button type="submit">Submit</Button>
-          <Button onClick={onClick}>Resend Otp</Button>
+          <button className="login-button" type="submit">
+            Submit
+          </button>
+          <button
+            className="login-button"
+            // onClick={onClick}
+          >
+            Resend Otp
+          </button>
         </Form>
       </Formik>
     </div>

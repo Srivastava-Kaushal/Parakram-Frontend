@@ -1,12 +1,11 @@
 import { Formik, Form } from "formik";
 import MyTextInput from "../FormComps/input";
-import { Button } from "flowbite-react";
 import validationSchema from "./validationSchema";
 import MyPhoneInput from "../FormComps/phoneInput";
 
 const ProfileBuild = () => (
-  <div>
-    <h1>Sign Up</h1>
+  <div className="container max-w-lg m-auto">
+    <h1 className="heading">Profile Build</h1>
     <Formik
       initialValues={{
         firstName: "",
@@ -21,7 +20,7 @@ const ProfileBuild = () => (
         alert(JSON.stringify(values, null, 2));
       }}
     >
-      <Form autoComplete="off" className="max-w-md mx-auto">
+      <Form autoComplete="off" className="form">
         <MyTextInput
           label="firstName"
           name="firstName"
@@ -52,7 +51,9 @@ const ProfileBuild = () => (
           placeholder="123-456-7890"
         />
 
-        <Button type="submit">Submit</Button>
+        <button className="login-button" type="submit">
+          Submit
+        </button>
       </Form>
     </Formik>
   </div>

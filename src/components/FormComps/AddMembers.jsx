@@ -18,9 +18,13 @@ const AddMember = ({ push, remove, insert, index }) => {
         placeholder=""
       />
 
-      <Button color="purple" type="button" onClick={() => remove(index)}>
+      <button
+        className="login-button"
+        type="button"
+        onClick={() => remove(index)}
+      >
         remove member
-      </Button>
+      </button>
     </div>
   );
 };
