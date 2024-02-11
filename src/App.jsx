@@ -28,7 +28,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Landing />} />
           <Route path="/merchandise" element={<Merchandise />} />
-          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/registerEvent/:sport" element={<RegisterPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/signUp" element={<SignUp />} />

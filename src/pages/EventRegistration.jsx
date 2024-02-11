@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
+import {useParams} from 'react-router-dom';
 import Form from "../components/RegistrationForm/teamForm";
 import transition from "../transition";
 import { animateScroll as scroll } from 'react-scroll';
 import IndForm from "../components/RegistrationForm/individualForm";
 
 const Register = () => {
+  const { sport } = useParams();
+
 	useEffect(() => {
 		scroll.scrollToTop({ duration: 1000 });
 	}, []);
