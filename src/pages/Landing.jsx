@@ -171,6 +171,8 @@ const LandingPage = () => {
                       animate="show"
                       className="mb-2 overflow-x-hidden lg:text-5xl text-3xl font-bold text-[#b92f2f] sm:px-12 py-2 lg:px-30"
                     >
+                      {/* <Countdown /> */}
+                      Parakram &apos;24
                       Defy odds, Define Legacy
                     </motion.p>
 

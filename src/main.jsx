@@ -1,4 +1,3 @@
-import React from 'react'
 import App from './App.jsx'
 import './App.css'
 import './index.css'

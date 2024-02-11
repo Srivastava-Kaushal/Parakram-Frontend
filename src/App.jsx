@@ -11,7 +11,6 @@ import EventsPage from "./pages/EventsPage";
 import ProfilePage from "./pages/profileBuild";
 import SignUp from "./pages/auth/signUpPage";
 import SignIn from "./pages/auth/signInPage";
-import Sponsers from "./pages/Sponsors";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/footer/Footer";
 import Sponsors from "./pages/Sponsors";
@@ -33,7 +32,6 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signIn" element={<SignIn />} />
-          <Route path="/sponsors" element={<Sponsers />} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/accomodation" element={<Accomodation/>} />
           <Route path="*" element={<NoPage/>} />
