@@ -24,7 +24,7 @@ const SignUp = () => {
       );
       console.log(data);
       const { _id } = data.user;
-      localStorage.setItem("userId" , _id);
+      localStorage.setItem("userId", _id);
       // setUserID(_id);
       setOpenModal(true);
     } catch (e) {
@@ -48,7 +48,7 @@ const SignUp = () => {
         {(f) => {
           return (
             <>
-              <Form className="max-w-md mx-auto">
+              <Form autoComplete="off" className="max-w-md mx-auto">
                 <MyTextInput
                   label="email"
                   name="email"

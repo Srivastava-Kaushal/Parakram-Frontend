@@ -23,7 +23,7 @@ const Emailform = (props) => {
           onSubmit(values);
         }}
       >
-        <Form className="max-w-md mx-auto">
+        <Form autoComplete="off" className="max-w-md mx-auto">
           <MyTextInput label="email" name="email" type="email" placeholder="" />
           <Button type="submit">send otp</Button>
         </Form>

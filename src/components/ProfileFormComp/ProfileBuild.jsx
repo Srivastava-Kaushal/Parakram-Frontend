@@ -21,7 +21,7 @@ const ProfileBuild = () => (
         alert(JSON.stringify(values, null, 2));
       }}
     >
-      <Form className="max-w-md mx-auto">
+      <Form autoComplete="off" className="max-w-md mx-auto">
         <MyTextInput
           label="firstName"
           name="firstName"

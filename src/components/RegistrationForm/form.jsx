@@ -5,23 +5,9 @@ import MyTextInput from "../FormComps/input";
 import validationSchema from "./validationSchema";
 import MySelect from "../FormComps/selectLeader";
 
-const geninitvals = (minTeamLength) => {
-  const initmems = [];
-  for (let i = 0; i < minTeamLength; i++) {
-    initmems.push({});
-  }
-  const initVals = {
-    members: initmems,
-    TeamName: "",
-    TeamLeader: "",
-  };
-
-  return initVals;
-};
-
 const RegisterForm = (props) => {
   const onSubmit = (values, { setSubmitting }) => {
-    console.log(values);
+    // console.log(values);
     setTimeout(() => {
       alert(JSON.stringify(values, null, 2));
       setSubmitting(false);
@@ -46,7 +32,7 @@ const RegisterForm = (props) => {
 
   const renderOptions = ({ members }) => {
     let options = members.map((member, index) => {
-      console.log(Object.keys(member).length);
+      // console.log(Object.keys(member).length);
       if (
         Object.keys(member).length === 2 &&
         member.name != "" &&
@@ -62,20 +48,34 @@ const RegisterForm = (props) => {
 
     const defaultOption = <option key={0}>select Leader</option>;
     options.unshift(defaultOption);
-    console.log(options);
+    // console.log(options);
     return options;
+  };
+
+  const getinitvals = (minTeamLength) => {
+    const initvals = { members: [], TeamName: "", TeamLeader: "" };
+    console.log(minTeamLength);
+    for (let i = 0; i < minTeamLength; i++) {
+      initvals.members.push({});
+    }
+
+    return initvals;
   };
 
   return (
     <>
-      <h1>register Event</h1>
+      <div className="bg-black py-4 flex justify-center items-center">
+        <span className="text-xl text-white">
+          {props.heading.toUpperCase()}
+        </span>
+      </div>
       <Formik
-        initialValues={geninitvals(props.minTeamLength)}
+        initialValues={getinitvals(props)}
         validationSchema={validationSchema}
         onSubmit={onSubmit}
       >
         {({ values }) => (
-          <Form className="max-w-lg mx-auto">
+          <Form autoComplete="off" className="max-w-lg mx-auto m-4">
             <MyTextInput
               label="Team Name"
               name="TeamName"
@@ -86,15 +86,18 @@ const RegisterForm = (props) => {
               {({ insert, remove, push }) => (
                 <div>
                   {values.members.length > 0 &&
-                    values.members.map((member, index) => (
-                      <AddMember
-                        key={index}
-                        insert={insert}
-                        remove={remove}
-                        push={push}
-                        index={index}
-                      />
-                    ))}
+                    values.members.map((member, index) => {
+                      console.log(index);
+                      return (
+                        <AddMember
+                          key={index}
+                          insert={insert}
+                          remove={remove}
+                          push={push}
+                          index={index}
+                        />
+                      );
+                    })}
                   {renderAddMemButton(values, push)}
                 </div>
               )}

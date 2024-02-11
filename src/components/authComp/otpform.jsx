@@ -8,18 +8,21 @@ import { useNavigate } from "react-router-dom";
 const OtpForm = (props) => {
   const navigate = useNavigate();
   const onSubmit = async (values) => {
-    try{
-      const userId = localStorage.getItem("userId")
-      const {data} = await axios.post("http://localhost:8000/api/verifyOtp" , {Otp : values.otp , userId : userId } , {withCredentials : true});
+    try {
+      const userId = localStorage.getItem("userId");
+      const { data } = await axios.post(
+        "http://localhost:8000/api/verifyOtp",
+        { Otp: values.otp, userId: userId },
+        { withCredentials: true }
+      );
       // console.log(data);
-      const {success , message} = data;
+      const { success, message } = data;
       console.log(data);
-      if(success){
+      if (success) {
         console.log("Success");
         navigate("/home");
-      } 
-    }
-    catch(e){
+      }
+    } catch (e) {
       console.log(e);
     }
   };
@@ -37,7 +40,7 @@ const OtpForm = (props) => {
           onSubmit(values);
         }}
       >
-        <Form className="max-w-md mx-auto">
+        <Form autoComplete="off" className="max-w-md mx-auto">
           <MyTextInput label="otp" name="otp" type="text" placeholder="" />
           <Button type="submit">Submit</Button>
           <Button onClick={onClick}>Resend Otp</Button>

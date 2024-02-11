@@ -14,7 +14,11 @@ const SignIp = () => {
 
   const navigate = useNavigate();
   const onSubmit = async (values) => {
-    const {data} = await axios.post("http://localhost:8000/api/login" , values , {withCredentials : true});
+    const { data } = await axios.post(
+      "http://localhost:8000/api/login",
+      values,
+      { withCredentials: true }
+    );
     console.log("Hello");
     navigate("/home");
   };
@@ -33,7 +37,7 @@ const SignIp = () => {
         }}
       >
         <>
-          <Form className="max-w-md mx-auto">
+          <Form autoComplete="off" className="max-w-md mx-auto">
             <MyTextInput
               label="email"
               name="email"
