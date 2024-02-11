@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Button, Modal } from "flowbite-react";
 import transition from "../transition";
 import { animateScroll as scroll } from "react-scroll";
+import ComingSoon from "../components/ComingSoon/ComingSoon";
 
 const MerchandisePage = () => {
   const [loading, setLoading] = useState(false);
@@ -31,9 +32,10 @@ const MerchandisePage = () => {
     setData({ ...data, [e.target.id]: e.target.value });
   };
   return (
-    <div className="h-screen bg-[#0f0d09]">
-      <div className="h-[400px]">
-        <Carousel slideInterval={2000}>
+    <div className="h-[500px] bg-[#0f0d09]">
+      <ComingSoon />
+      {/* <div className="h-[400px]"> */}
+      {/* <Carousel slideInterval={2000}>
           <img
             src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
             alt="..."
@@ -58,25 +60,25 @@ const MerchandisePage = () => {
             src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
             alt="..."
           />
-        </Carousel>
-      </div>
-      <div className="flex justify-center items-center h-[200px]">
-        <div>
-          {/* <Button
+        </Carousel> */}
+      {/* </div> */}
+      {/* <div className="flex justify-center items-center h-[200px]">
+        <div> */}
+      {/* <Button
             onClick={() => setOpenModal(true)}
             className="bg-[#f5c143] text-[#0f0d09] hover:bg-[#e6aa1e]"
           >
             Buy Our Merch
           </Button> */}
-          <button
+      {/* <button
             type="button"
             onClick={() => setOpenModal(true)}
             className="text-[#0f0d09] bg-gradient-to-r from-[#f5c143] to-[#962525] hover:bg-gradient-to-l focus:ring-2 focus:outline-none focus:ring-[#371411] font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             Buy Our Merch
-          </button>
-        </div>
-        <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
+          </button> */}
+      {/* </div> */}
+      {/* <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
           <Modal.Header>Merchandise Form</Modal.Header>
           <Modal.Body>
             <div className="space-y-6">
@@ -169,8 +171,8 @@ const MerchandisePage = () => {
               Decline
             </Button>
           </Modal.Footer>
-        </Modal>
-      </div>
+        </Modal> */}
+      {/* </div> */}
     </div>
   );
 };
