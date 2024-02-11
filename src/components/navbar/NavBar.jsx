@@ -11,32 +11,16 @@ function classNames(...classes) {
 }
 
 const NavBar = () => {
-  const [navigation, setnavigation] = useState([
-    { name: "Home", href: "/", current: true },
-    { name: "Events", href: "/events", current: false },
-    { name: "Merchandise", href: "/merchandise", current: false },
-    { name: "Sponsors", href: "/sponsors", current: false },
-    { name: "Accomodation", href: "/accomodation", current: false },
-  ]);
+	const currentPath = useLocation().pathname;
 
-  const changeNavigation = (e) => {
-    let name = e.currentTarget.className;
-    setnavigation([
-      { name: "Home", href: "/", current: name === "Home" },
-      { name: "Events", href: "/events", current: name === "Events" },
-      {
-        name: "Merchandise",
-        href: "/merchandise",
-        current: name === "Merchandise",
-      },
-      { name: "Sponsors", href: "/sponsors", current: name === "Sponsors" },
-      {
-        name: "Accomodation",
-        href: "/accomodation",
-        current: name === "Accomodation",
-      },
-    ]);
-  };
+	const navigation = [
+		{ name: 'Home', href: '/' },
+		{ name: 'Events', href: '/events' },
+		{ name: 'Merchandise', href: '/merchandise' },
+		{ name: 'Accomodation', href: '/accomodation' },
+		{ name: 'About Us', href: '/about' },
+		{ name: 'Sponsors', href: '/sponsors' },
+	];
 
 	return (
 		<Fragment>
