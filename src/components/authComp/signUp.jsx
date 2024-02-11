@@ -21,7 +21,7 @@ const SignUp = () => {
       console.log(data);
       if(success){
         console.log("Success");
-        navigate("/home");
+        navigate("/");
       } 
     }
     catch(e){

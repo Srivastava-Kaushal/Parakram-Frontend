@@ -48,7 +48,7 @@ const SignIp = () => {
       { withCredentials: true }
     );
     console.log("Hello");
-    navigate("/home");
+    navigate("/");
   };
 
   return (
