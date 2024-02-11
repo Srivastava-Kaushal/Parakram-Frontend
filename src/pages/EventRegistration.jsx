@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Form from "../components/RegistrationForm/teamForm";
 import transition from "../transition";
 import IndForm from "../components/RegistrationForm/individualForm";
@@ -19,6 +20,23 @@ const RegisterPage = () => {
       {/* <IndForm heading={config.heading} /> */}
     </div>
   );
+=======
+import { useEffect } from 'react';
+import Form from '../components/RegistrationForm/form';
+import transition from '../transition';
+import { animateScroll as scroll } from 'react-scroll';
+
+const Register = () => {
+	useEffect(() => {
+		scroll.scrollToTop({ duration: 1000 });
+	}, []);
+	return (
+		<>
+			<Form maxTeamLength={10} minTeamLength={8} />
+		</>
+	);
+>>>>>>> ffe0ffd10920dfc268fef7ab821cfbf5e403b8a8
 };
 
-export default transition(RegisterPage);
+const RegisterPage = transition(Register);
+export default RegisterPage;

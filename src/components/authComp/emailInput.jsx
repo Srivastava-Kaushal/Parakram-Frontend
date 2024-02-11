@@ -5,9 +5,9 @@ import { Button } from "flowbite-react";
 
 const Emailform = (props) => {
   const onSubmit = async (values) => {
-    await new Promise((r) => setTimeout(r, 500));
-    alert(JSON.stringify(values, null, 2));
+    props.onSubmit(values);
     props.openModal();
+
   };
 
   return (

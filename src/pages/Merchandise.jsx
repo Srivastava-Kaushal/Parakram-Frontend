@@ -2,13 +2,18 @@
 
 import { Carousel } from "flowbite-react";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Modal } from "flowbite-react";
 import transition from "../transition";
+import { animateScroll as scroll } from "react-scroll";
 
 const MerchandisePage = () => {
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+
+  useEffect(() => {
+    scroll.scrollToTop({ duration: 1000 });
+  }, []);
 
   const [data, setData] = useState({
     size: "S",
@@ -26,7 +31,7 @@ const MerchandisePage = () => {
     setData({ ...data, [e.target.id]: e.target.value });
   };
   return (
-    <div className="h-screen">
+    <div className="h-screen bg-[#0f0d09]">
       <div className="h-[400px]">
         <Carousel slideInterval={2000}>
           <img
@@ -57,7 +62,19 @@ const MerchandisePage = () => {
       </div>
       <div className="flex justify-center items-center h-[200px]">
         <div>
-          <Button onClick={() => setOpenModal(true)}>Buy Our Merch</Button>
+          {/* <Button
+            onClick={() => setOpenModal(true)}
+            className="bg-[#f5c143] text-[#0f0d09] hover:bg-[#e6aa1e]"
+          >
+            Buy Our Merch
+          </Button> */}
+          <button
+            type="button"
+            onClick={() => setOpenModal(true)}
+            className="text-[#0f0d09] bg-gradient-to-r from-[#f5c143] to-[#962525] hover:bg-gradient-to-l focus:ring-2 focus:outline-none focus:ring-[#371411] font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          >
+            Buy Our Merch
+          </button>
         </div>
         <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
           <Modal.Header>Merchandise Form</Modal.Header>
@@ -71,10 +88,7 @@ const MerchandisePage = () => {
                 className=" w-full h-full rounded-lg bg-[#7CB9E8] shadow-xl px-5 py-5 backdrop-blur-lg text-white font-semibold"
               >
                 <div className="justify-center items-center mb-4">
-                  <label
-                    htmlFor="address"
-                    className="block mb-2 text-sm  "
-                  >
+                  <label htmlFor="address" className="block mb-2 text-sm  ">
                     Address
                   </label>
                   <input
@@ -88,10 +102,7 @@ const MerchandisePage = () => {
                   />
                 </div>
                 <div className="mb-4">
-                  <label
-                    htmlFor="size"
-                    className="block mb-2 text-sm"
-                  >
+                  <label htmlFor="size" className="block mb-2 text-sm">
                     Available Merchandise
                   </label>
                   <select
@@ -107,10 +118,7 @@ const MerchandisePage = () => {
                   </select>
                 </div>
                 <div className="mb-4">
-                  <label
-                    htmlFor="quantity"
-                    className="block mb-2 text-sm  "
-                  >
+                  <label htmlFor="quantity" className="block mb-2 text-sm  ">
                     Quantity
                   </label>
                   <input
@@ -126,10 +134,7 @@ const MerchandisePage = () => {
                 </div>
 
                 <div className="mb-4">
-                  <label
-                    htmlFor="size"
-                    className="block mb-2 text-sm"
-                  >
+                  <label htmlFor="size" className="block mb-2 text-sm">
                     Select your size{" "}
                     {data.type == "Tshirt + Hoodie Combo" && "(Tshirt)"}
                   </label>
@@ -168,7 +173,7 @@ const MerchandisePage = () => {
       </div>
     </div>
   );
-}
+};
 
 const Merchandise = transition(MerchandisePage);
 export default Merchandise;
