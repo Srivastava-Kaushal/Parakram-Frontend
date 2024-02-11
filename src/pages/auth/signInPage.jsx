@@ -3,9 +3,9 @@ import transition from "../../transition";
 
 const SignUpPage = () => {
   return (
-    <>
+    <div className="flex justify-center align-middle bg-black min-h-screen">
       <SignIn />
-    </>
+    </div>
   );
 };
 

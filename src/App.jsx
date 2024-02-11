@@ -16,6 +16,7 @@ import Footer from "./components/footer/Footer";
 import Sponsors from "./pages/Sponsors";
 import Accomodation from "./pages/Accomodation";
 import NoPage from "./pages/NoPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   //hello
@@ -27,13 +28,14 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Landing />} />
           <Route path="/merchandise" element={<Merchandise />} />
-          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/registerEvent/:sport" element={<RegisterPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/accomodation" element={<Accomodation/>} />
+          <Route path="/about" element={<AboutUsPage/>} />
           <Route path="*" element={<NoPage/>} />
         </Routes>
       </AnimatePresence>

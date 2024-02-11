@@ -11,7 +11,7 @@ const Emailform = (props) => {
   };
 
   return (
-    <div>
+    <div className="container max-w-lg m-auto">
       <Formik
         initialValues={{
           email: "",
@@ -23,9 +23,11 @@ const Emailform = (props) => {
           onSubmit(values);
         }}
       >
-        <Form className="max-w-md mx-auto">
+        <Form autoComplete="off" className="form">
           <MyTextInput label="email" name="email" type="email" placeholder="" />
-          <Button type="submit">send otp</Button>
+          <button className="login-button" type="submit">
+            send otp
+          </button>
         </Form>
       </Formik>
     </div>

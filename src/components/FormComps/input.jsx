@@ -5,6 +5,7 @@ const MyTextInput = ({ label, ...props }) => {
   // which we can spread on <input>. We can use field meta to show an error
   // message if the field is invalid and it has been touched (i.e. visited)
   const [field, meta] = useField(props);
+
   return (
     <div className="relative z-0 w-full mb-5 group">
       <input
@@ -19,7 +20,12 @@ const MyTextInput = ({ label, ...props }) => {
         {label}
       </label>
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <p
+          id="filled_error_help"
+          className="mt-2 text-xs text-red-600 dark:text-red-400"
+        >
+          <span className="font-medium">Oh, snapp!</span> {meta.error}
+        </p>
       ) : null}
     </div>
   );
