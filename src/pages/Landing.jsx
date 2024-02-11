@@ -113,20 +113,20 @@ const LandingPage = () => {
                 <motion.img
                   variants={load}
                   className="h-[35vh] absolute top-10 left-10"
-                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624668/ls1_d4fk6h.jpg"
+                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632669/bas1_geb4px.jpg"
                   alt=""
                 />
                 <motion.img
                   variants={load}
                   layout
                   className="h-[35vh] absolute bottom-10 right-10 "
-                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624704/cric-ls4_e6xiv5.jpg"
+                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632756/ls2_mtum0i.jpg"
                   alt=""
                 />
                 <motion.img
                   variants={load}
                   className="h-[80vh] bottom-10 right-10 z-10"
-                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624729/ath4_afxdsg.jpg"
+                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cric-ls4_dzkt75.jpg"
                   alt=""
                 />
               </motion.div>
@@ -144,7 +144,7 @@ const LandingPage = () => {
                   transition: { duration: 1 },
                 }}
                 // style="background-image: url('../assets/images/image-4.jpg');"
-                className="bg-[url('https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624670/ft6_ow1y7h.jpg')] bg-no-repeat bg-cover h-screen"
+                className="bg-[url('https://res.cloudinary.com/dhriluafq/image/upload/v1707632842/bas4_d07qmu.jpg')] bg-no-repeat bg-cover h-screen"
               >
                 <motion.div className="px-4 flex justify-center items-center gap-1 mx-auto max-w-screen-xl text-center py-24 lg:py-40">
                   <motion.div className="bg-opacity-10 backdrop-blur w-[60vw] rounded-3xl">
@@ -178,7 +178,7 @@ const LandingPage = () => {
                       variants={textAnimate2}
                       initial="hidden"
                       animate="show"
-                      className="h-auto  overflow-y-hidden my-3 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fbe10e] lg:text-2xl sm:px-5 bg-opacity-50 backdrop-blur-xl"
+                      className="h-auto  overflow-y-hidden my-3 overflow-x-hidden flex justify-center text-lg font-semibold text-[#fbe10e] lg:text-2xl sm:px-5"
                     >
                       <button
                         type="button"
@@ -241,28 +241,28 @@ const LandingPage = () => {
                     <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
-                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624668/ls1_d4fk6h.jpg"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cri1_cblis9.jpg"
                       alt=""
                     />
                     <motion.img
                       variants={imgVariant}
                       layout
                       className="h-[40vh] w-[40vw] object-cover"
-                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624704/cric-ls4_e6xiv5.jpg"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cric-ls4_dzkt75.jpg"
+                      alt=""
+                    />
+                    {/* <motion.img
+                      variants={imgVariant}
+                      className="h-[40vh] w-[40vw] object-cover"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632758/ath3_qg6nmy.jpg"
                       alt=""
                     />
                     <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
-                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624729/ath4_afxdsg.jpg"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632756/ath4_jeh6xt.jpg"
                       alt=""
-                    />
-                    <motion.img
-                      variants={imgVariant}
-                      className="h-[40vh] w-[40vw] object-cover"
-                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624727/ls2_zkgyqn.jpg"
-                      alt=""
-                    />
+                    /> */}
                     {/* <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
@@ -284,7 +284,7 @@ const LandingPage = () => {
               <div className="bg-[#0f0d09] h-screen flex justify-center items-center pt-10 pb-20">
                 <Carousel className="w-[80vw]">
                   <img
-                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624668/ls1_d4fk6h.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632669/bas4_dfothi.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -293,7 +293,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624704/cric-ls4_e6xiv5.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cri3_fseeoj.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -302,7 +302,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624729/ath4_afxdsg.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632756/ls2_mtum0i.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -311,7 +311,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624727/ls2_zkgyqn.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632756/ath4_jeh6xt.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -320,7 +320,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1707624702/cri3_qicxug.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cri3_fseeoj.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
