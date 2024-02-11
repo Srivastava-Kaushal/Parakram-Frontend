@@ -36,7 +36,7 @@ function FooterT() {
                 Defy odds, define legacy EAST INDIA'S LARGEST SPORTS FESTIVAL,
                 IIT (ISM), DHANBAD
               </div>
-              {/* <a
+              <a
               href="https://drive.google.com/file/d/1XWCCAvG8_vHOTChQzw3sT0nUJuZRuPog/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,7 +61,7 @@ function FooterT() {
                   Sponsorship Brochure
                 </p>
               </button>
-            </a> */}
+            </a>
             </div>
             <div className="flex justify-center items-center">
               <div className="grid grid-cols-2 gap-8 sm:gap-6 text-[#efede0]">
@@ -79,7 +79,7 @@ function FooterT() {
                     </li>
                     <li className="my-4">
                       <a
-                        href="mailto:srijan@iitism.ac.in"
+                        href="mailto:parakram@iitism.ac.in"
                         className="hover:underline text-xs sm:text-sm md:text-base text-[#e6aa1e] flex items-center justify-start gap-x-3 sm:gap-x-5"
                       >
                         <FaPhoneAlt className="text-[#e6aa1e] text-lg sm:text-xl" />
@@ -134,14 +134,14 @@ function FooterT() {
           <div className="sm:flex sm:items-center sm:justify-between text-[#ffc946]">
             <div className="flex mt-4 justify-around sm:mt-0 text-3xl gap-x-5">
               <a
-                href="https://www.facebook.com/ism.srijan"
+                href="https://www.facebook.com/parakram.iitism/about/"
                 className=" hover:text-[#e6aa1e]"
               >
                 <FaFacebookF />
                 <span className="sr-only">Facebook page</span>
               </a>
               <a
-                href="https://www.instagram.com/srijaniitism/"
+                href="https://www.instagram.com/parakram.iitism/"
                 className=" hover:text-[#e6aa1e] ms-5"
               >
                 <FaInstagram />

@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -11,13 +11,17 @@ function classNames(...classes) {
 }
 
 const NavBar = () => {
-  const [navigation, setnavigation] = useState([
-    { name: "Home", href: "/", current: true },
-    { name: "Events", href: "/events", current: false },
-    { name: "Merchandise", href: "/merchandise", current: false },
-    { name: "Sponsors", href: "/sponsors", current: false },
-    { name: "Accomodation", href: "/accomodation", current: false },
-  ]);
+  const [navigation, setnavigation] = useState([]);
+
+  useEffect(() => {
+    setnavigation([
+      { name: "Home", href: "/", current: true },
+      { name: "Events", href: "/events", current: false },
+      { name: "Merchandise", href: "/merchandise", current: false },
+      { name: "Sponsors", href: "/sponsors", current: false },
+      { name: "Accomodation", href: "/accomodation", current: false },
+    ]);
+  }, []);
 
   const changeNavigation = (e) => {
     let name = e.currentTarget.className;
