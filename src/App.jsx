@@ -16,6 +16,7 @@ import Footer from "./components/footer/Footer";
 import Sponsors from "./pages/Sponsors";
 import Accomodation from "./pages/Accomodation";
 import NoPage from "./pages/NoPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   //hello
@@ -34,6 +35,7 @@ function App() {
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/accomodation" element={<Accomodation/>} />
+          <Route path="/about" element={<AboutUsPage/>} />
           <Route path="*" element={<NoPage/>} />
         </Routes>
       </AnimatePresence>
