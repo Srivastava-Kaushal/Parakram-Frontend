@@ -22,7 +22,7 @@ const SetNewPass = (props) => {
         }}
       >
         <>
-          <Form className="max-w-md mx-auto">
+          <Form className="form">
             <MyTextInput
               label="password"
               name="password"
@@ -37,7 +37,9 @@ const SetNewPass = (props) => {
               placeholder=""
             />
 
-            <Button type="submit">Submit</Button>
+            <button className="login-button" type="submit">
+              Submit
+            </button>
           </Form>
         </>
       </Formik>
