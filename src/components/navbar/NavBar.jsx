@@ -20,6 +20,8 @@ const NavBar = () => {
 		{ name: 'Accomodation', href: '/accomodation' },
 		{ name: 'About Us', href: '/about' },
 		{ name: 'Sponsors', href: '/sponsors' },
+		{ name: 'Sign Up', href: '/signUp' },
+		{ name: 'Log In', href: '/signIn' },
 	];
 
 	return (
