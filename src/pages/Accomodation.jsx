@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 
 import AccCard from "../components/AccomodationCardComp/AccCard";
 import transition from "../transition";
 
-function Accomodation() {
+const AccomodationPage = () => {
   useEffect(() => {
     scroll.scrollToTop({ duration: 1000 });
   }, []);
@@ -31,6 +31,7 @@ function Accomodation() {
       price: 2000,
     },
   ];
+
   return (
     <div className="flex justify-center items-center bg-black">
       <div className="my-20 grid sm:grid-cols-4 sm:gap-x-8 grid-cols-2 gap-y-4">
@@ -42,4 +43,5 @@ function Accomodation() {
   );
 }
 
-export default transition(Accomodation);
+const Accomodation = transition(AccomodationPage)
+export default Accomodation;
