@@ -11,7 +11,6 @@ import TableTennisImg from '../../assets/Images/TableTennis.jpg'
 import SquashImg from '../../assets/Images/Squash.jpg'
 import ChessImg from '../../assets/Images/Chess.jpg'
 import TennisImg from '../../assets/Images/Tennis.jpg'
-import WeightliftingImg from '../../assets/Images/Weightlifting.jpg'
 import PowerliftingImg from '../../assets/Images/Powerlifting.jpg'
 import BoxingImg from '../../assets/Images/Boxing.jpg'
 import KarateImg from '../../assets/Images/Karate.jpg'
@@ -31,7 +30,6 @@ const EventsList = () => {
             <SportBanner sportImg={SquashImg} sportName={"Squash"} eventLink={"/registerEvent/squash"}/>
             <SportBanner sportImg={ChessImg} sportName={"Chess"} eventLink={"/registerEvent/chess"}/>
             <SportBanner sportImg={TennisImg} sportName={"Tennis"} eventLink={"/registerEvent/tennis"}/>
-            <SportBanner sportImg={WeightliftingImg} sportName={"Weightlifting"} eventLink={"/registerEvent/weightlifting"}/>
             <SportBanner sportImg={PowerliftingImg} sportName={"Power Lifting"} eventLink={"/registerEvent/powerlifting"}/>
             <SportBanner sportImg={BoxingImg} sportName={"Boxing"} eventLink={"/registerEvent/boxing"}/>
             <SportBanner sportImg={KarateImg} sportName={"Karate"} eventLink={"/registerEvent/karate"}/>

@@ -17,6 +17,7 @@ import Sponsors from "./pages/Sponsors";
 import Accomodation from "./pages/Accomodation";
 import NoPage from "./pages/NoPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import RedirectToHomePage from "./pages/RedirectToHomePage/RedirectToHome";
 
 function App() {
   //hello
@@ -26,6 +27,7 @@ function App() {
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<RedirectToHomePage />} />
           <Route path="/home" element={<Landing />} />
           <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/registerEvent/:sport" element={<RegisterPage />} />
