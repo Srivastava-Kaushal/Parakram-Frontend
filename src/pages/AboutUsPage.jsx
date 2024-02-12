@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import transition from '../transition';
 import { animateScroll as scroll } from 'react-scroll';
 import BgImage from '../assets/Images/AboutUsBg.avif';
+import Convener from '../assets/Images/convener.jpg';
 
 const AboutUs = () => {
 	useEffect(() => {
@@ -32,11 +33,18 @@ const AboutUs = () => {
 					academic departments covering Engineering, Applied Sciences,
 					Humanities and Social Sciences, and Management studies.
 				</p>
-				<div className="w-4/5 my-10 py-10 px-10 backdrop-blur-sm bg-white/20 text-white rounded-3xl shadow-2xl">
-					<h1 className="text-white text-5xl text-center py-5">
+				<div className="w-4/5 my-10 py-10 px-10 backdrop-blur-sm bg-white/20 text-white rounded-3xl shadow-2xl flex flex-col items-center">
+					<div className='flex'>
+						<img src={Convener} alt="c" className='w-40 rounded-full mr-5' />
+						<span className='flex flex-col items-center justify-center ml-5'>
+							<span className='text-2xl pt-4'>Prof. Annavarapu Chandra Sekhara Rao</span>
+							<span className='text-lg text-yellow-200'>Dept. of Computer Science & Engg.</span>
+						</span>
+					</div>
+					<h1 className="text-white text-5xl text-center py-5 font-bold">
 						Convener’s Message
 					</h1>
-					<p className="px-10 py-5 text-lg text-justify">
+					<p className="px-10 py-5 text-md text-justify">
 						The combination of talent, hard effort, compassion, competitive
 						spirit, and enthusiasm is what makes sports great. It is the one
 						thing that, regardless of gender, age, color, religion, caste, or
@@ -56,7 +64,7 @@ const AboutUs = () => {
 						symphony of life, sports provide the rhythm, the discipline, and the
 						harmony that elevate us to the highest notes of achievement.”
 					</p>
-					<p className="px-10 py-5 text-lg text-justify">
+					<p className="px-10 py-5 text-md text-justify">
 						The goal of &apos;&apos;Parakram&apos;24&apos;&apos; is to provide
 						an equitable and level playing field where all individuals and teams
 						can showcase their full potential, both mentally and physically. As
