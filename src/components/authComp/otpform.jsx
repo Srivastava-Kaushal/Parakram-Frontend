@@ -9,19 +9,27 @@ import { useState } from "react";
 const OtpForm = (props) => {
   const navigate = useNavigate();
   const onSubmit = async (values) => {
-    props.onSubmit(values);
-    props.openModal();
-  };
-
-  const onClick = async(values) => {
-    const email = localStorage.getItem("email");
-    const userId = localStorage.getItem("userId");
-    const {data} = await axios.post("http://localhost:8000/api/resendPassChange" , {email : email , userId : userId} , {withCredentials : true});
-    console.log(data);
+    try {
+      const userId = localStorage.getItem("userId");
+      const { data } = await axios.post(
+        "http://localhost:8000/api/verifyOtp",
+        { Otp: values.otp, userId: userId },
+        { withCredentials: true }
+      );
+      // console.log(data);
+      const { success, message } = data;
+      console.log(data);
+      if (success) {
+        console.log("Success");
+        navigate("/home");
+      }
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
-    <div>
+    <div className="container max-w-lg m-auto">
       <Formik
         initialValues={{
           otp: "",
@@ -33,21 +41,18 @@ const OtpForm = (props) => {
           onSubmit(values);
         }}
       >
-        {({ values }) => {
-          return (
-            <Form className="max-w-md mx-auto">
-              <MyTextInput label="otp" name="otp" type="text" placeholder="" />
-              <Button type="submit">Submit</Button>
-              <Button
-                onClick={() => {
-                  onClick(values);
-                }}
-              >
-                Resend Otp
-              </Button>
-            </Form>
-          );
-        }}
+        <Form autoComplete="off" className="form">
+          <MyTextInput label="otp" name="otp" type="text" placeholder="" />
+          <button className="login-button" type="submit">
+            Submit
+          </button>
+          <button
+            className="login-button"
+            // onClick={onClick}
+          >
+            Resend Otp
+          </button>
+        </Form>
       </Formik>
     </div>
   );

@@ -21,7 +21,7 @@ const SignUp = () => {
       console.log(data);
       if(success){
         console.log("Success");
-        navigate("/home");
+        navigate("/");
       } 
     }
     catch(e){
@@ -41,7 +41,7 @@ const SignUp = () => {
       );
       console.log(data);
       const { _id } = data.user;
-      localStorage.setItem("userId" , _id);
+      localStorage.setItem("userId", _id);
       // setUserID(_id);
       setOpenModal(true);
     } catch (e) {
@@ -50,8 +50,8 @@ const SignUp = () => {
   };
 
   return (
-    <div>
-      <h1>Sign Up</h1>
+    <div className="container max-w-lg  m-auto ">
+      <h1 className="heading">Sign Up</h1>
       <Formik
         initialValues={{
           email: "",
@@ -65,7 +65,7 @@ const SignUp = () => {
         {(f) => {
           return (
             <>
-              <Form className="max-w-md mx-auto">
+              <Form autoComplete="off" className="form">
                 <MyTextInput
                   label="email"
                   name="email"
@@ -93,7 +93,9 @@ const SignUp = () => {
                   placeholder=""
                 />
 
-                <Button type="submit">Submit</Button>
+                <button type="submit" className="login-button">
+                  Submit
+                </button>
               </Form>
             </>
           );
