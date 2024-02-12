@@ -113,20 +113,20 @@ const LandingPage = () => {
                 <motion.img
                   variants={load}
                   className="h-[35vh] absolute top-10 left-10"
-                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632669/bas1_geb4px.jpg"
+                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727845/DSC_0384_ssgask.jpg"
                   alt=""
                 />
                 <motion.img
                   variants={load}
                   layout
                   className="h-[35vh] absolute bottom-10 right-10 "
-                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632756/ls2_mtum0i.jpg"
+                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727839/DSC_0304_hbrxby.jpg"
                   alt=""
                 />
                 <motion.img
                   variants={load}
                   className="h-[80vh] bottom-10 right-10 z-10"
-                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cric-ls4_dzkt75.jpg"
+                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727836/DSC_0830_yt0jiw.jpg"
                   alt=""
                 />
               </motion.div>
@@ -136,15 +136,14 @@ const LandingPage = () => {
           {show && (
             <>
               <motion.div
-                initial={{ opacity: 0, y: 400, width: 0 }}
+                initial={{ opacity: 0, y: 400 }}
                 animate={{
                   opacity: 1,
                   y: 0,
-                  width: "screen",
                   transition: { duration: 1 },
                 }}
                 // style="background-image: url('../assets/images/image-4.jpg');"
-                className="bg-[url('https://res.cloudinary.com/dhriluafq/image/upload/v1707632842/bas4_d07qmu.jpg')] bg-no-repeat bg-cover h-screen"
+                className="bg-[url('https://res.cloudinary.com/dhriluafq/image/upload/v1707727835/DSC_0793_n7j5fu.jpg')] bg-no-repeat bg-cover h-screen"
               >
                 <motion.div className="px-4 flex justify-center items-center gap-1 mx-auto max-w-screen-xl text-center py-24 lg:py-40">
                   <motion.div className="bg-opacity-10 backdrop-blur w-[60vw] rounded-3xl">
@@ -172,7 +171,6 @@ const LandingPage = () => {
                       className="mb-2 overflow-x-hidden lg:text-5xl text-3xl font-bold text-[#b92f2f] sm:px-12 py-2 lg:px-30"
                     >
                       {/* <Countdown /> */}
-                      
                       Defy odds, Define Legacy
                     </motion.p>
 
@@ -243,14 +241,14 @@ const LandingPage = () => {
                     <motion.img
                       variants={imgVariant}
                       className="h-[40vh] w-[40vw] object-cover"
-                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cri1_cblis9.jpg"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727835/DSC_0837_bjhtpz.jpg"
                       alt=""
                     />
                     <motion.img
                       variants={imgVariant}
                       layout
                       className="h-[40vh] w-[40vw] object-cover"
-                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cric-ls4_dzkt75.jpg"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727835/DSC_0945_iqegab.jpg"
                       alt=""
                     />
                     {/* <motion.img
@@ -286,7 +284,7 @@ const LandingPage = () => {
               <div className="bg-[#0f0d09] h-screen flex justify-center items-center pt-10 pb-20">
                 <Carousel className="w-[80vw]">
                   <img
-                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632669/bas4_dfothi.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727835/DSC_0555_qx0kqb.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -295,7 +293,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cri3_fseeoj.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727834/DSC_0345_xqgmz5.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -304,7 +302,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632756/ls2_mtum0i.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707728247/DSC_0794_mmurzx.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -313,7 +311,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632756/ath4_jeh6xt.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707727830/DSC_0288_drptwk.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
@@ -322,7 +320,7 @@ const LandingPage = () => {
                     className="object-cover"
                   />
                   <img
-                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707632923/cri3_fseeoj.jpg"
+                    src="https://res.cloudinary.com/dhriluafq/image/upload/v1707728262/DSC_0799_xdvwkk.jpg"
                     alt="..."
                     style={{
                       maxHeight: "100%",
