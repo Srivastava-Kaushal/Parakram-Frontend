@@ -26,7 +26,7 @@ function App() {
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Landing />} />
           <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/registerEvent/:sport" element={<RegisterPage />} />
           <Route path="/events" element={<EventsPage />} />

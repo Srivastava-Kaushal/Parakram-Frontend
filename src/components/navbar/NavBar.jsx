@@ -14,7 +14,7 @@ const NavBar = () => {
 	const currentPath = useLocation().pathname;
 
 	const navigation = [
-		{ name: 'Home', href: '/' },
+		{ name: 'Home', href: '/home' },
 		{ name: 'Events', href: '/events' },
 		{ name: 'Merchandise', href: '/merchandise' },
 		{ name: 'Accomodation', href: '/accomodation' },

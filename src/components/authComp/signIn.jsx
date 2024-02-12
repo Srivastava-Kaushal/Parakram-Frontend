@@ -49,7 +49,7 @@ const SignIp = () => {
       { withCredentials: true }
     );
     console.log("Hello");
-    navigate("/");
+    navigate("/home");
   };
 
   return (
