@@ -12,19 +12,22 @@ const SignUp = () => {
   const navigate = useNavigate();
   // const [userID, setUserID] = useState(null);
 
-    const onSubmitOtp = async (values) => {
-    try{
-      const userId = localStorage.getItem("userId")
-      const {data} = await axios.post("http://localhost:8000/api/verifyOtp" , {Otp : values.otp , userId : userId } , {withCredentials : true});
+  const onSubmitOtp = async (values) => {
+    try {
+      const userId = localStorage.getItem("userId");
+      const { data } = await axios.post(
+        "http://localhost:8000/api/verifyOtp",
+        { Otp: values.otp, userId: userId },
+        { withCredentials: true }
+      );
       // console.log(data);
-      const {success , message} = data;
+      const { success, message } = data;
       console.log(data);
-      if(success){
+      if (success) {
         console.log("Success");
         navigate("/");
-      } 
-    }
-    catch(e){
+      }
+    } catch (e) {
       console.log(e);
     }
   };
@@ -106,7 +109,10 @@ const SignUp = () => {
         <Modal.Header>otp</Modal.Header>
         <Modal.Body>
           <div className="m-10">
-            <OtpForm closeModal={() => setOpenModal(false)} onSubmit={onSubmitOtp}/>
+            <OtpForm
+              closeModal={() => setOpenModal(false)}
+              onSubmit={onSubmitOtp}
+            />
           </div>
         </Modal.Body>
       </Modal>

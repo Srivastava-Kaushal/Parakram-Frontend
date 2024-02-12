@@ -1,16 +1,15 @@
 import { useEffect } from "react";
-import SignUpForm from "../components/ProfileFormComp/ProfileBuild";
+import ProfileBuild from "../components/ProfileFormComp/ProfileBuild";
 import { animateScroll as scroll } from "react-scroll";
 
 const ProfilePage = () => {
-  
   useEffect(() => {
     scroll.scrollToTop({ duration: 1000 });
   }, []);
-  
+
   return (
-    <div className=" w-full bg-black">
-      <SignUpForm />
+    <div className=" flex justify-center align-middle bg-black min-h-screen">
+      <ProfileBuild />
     </div>
   );
 };
