@@ -24,10 +24,10 @@ const MyPhoneInput = ({ label, ...props }) => {
         />
         {meta.touched && meta.error ? (
           <p
-            id="helper-text-explanation"
-            className="mt-2 text-sm text-gray-500 dark:text-gray-400"
+            id="filled_error_help"
+            className="mt-2 text-xs text-red-600 dark:text-red-400"
           >
-            {meta.error}
+            <span className="font-medium">Oh, snapp!</span> {meta.error}
           </p>
         ) : null}
       </div>
