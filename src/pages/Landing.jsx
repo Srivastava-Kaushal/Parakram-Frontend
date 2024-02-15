@@ -1,4 +1,3 @@
-import logoSvg from "../assets/logo-svg.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { Carousel } from "flowbite-react";
 // import img5 from "../assets/images/cri1.jpg";
@@ -153,7 +152,10 @@ const LandingPage = () => {
                       animate="show"
                       className="text-6xl flex justify-center font-extrabold tracking-tight leading-none uppercase text-[#f2f1ef] md:text-5xl lg:text-6xl"
                     >
-                      <img src={logoSvg} width="450px" />
+                      <img
+                        src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1708000698/logo_transparent_1_qytwbz.png"
+                        width="450px"
+                      />
                     </motion.h1>
                     <motion.p
                       variants={textAnimate2}
