@@ -14,10 +14,10 @@ function AccCard(props) {
   };
   return (
     <div>
-      <div class="card">
-        <span class="card__hover">{props.title}</span>
+      <div className="card">
+        <span className="card__hover">{props.title}</span>
 
-        <figure class="card__figure">
+        <figure className="card__figure">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -31,8 +31,8 @@ function AccCard(props) {
           </svg>
         </figure>
 
-        <div class="card__info">
-          <span class="card__name">
+        <div className="card__info">
+          <span className="card__name">
             {props.discription}
             {/* <span class="card__ocupation"> Frontend Developer </span>
             <div class="card__links">
@@ -113,9 +113,7 @@ function AccCard(props) {
                         <label htmlFor="size" className="block mb-2 text-sm">
                           Selected Pack
                         </label>
-                        <div>
-                          {props.title}
-                        </div>
+                        <div>{props.title}</div>
                       </div>
                       <div className="mb-4">
                         <label
@@ -124,18 +122,14 @@ function AccCard(props) {
                         >
                           Price
                         </label>
-                        <div>
-                          {props.price}
-                        </div>
+                        <div>{props.price}</div>
                       </div>
 
                       <div className="mb-4">
                         <label htmlFor="size" className="block mb-2 text-sm">
                           Features{" "}
                         </label>
-                        <div>
-                          {props.discription}
-                        </div>
+                        <div>{props.modalDisc}</div>
                       </div>
                       <button
                         type="submit"

@@ -81,29 +81,6 @@ const RegisterForm = (props) => {
                 placeholder=""
               />
               <br />
-              <FieldArray
-                className="grid md:grid-cols-2 md:gap-6"
-                name="members"
-              >
-                {({ insert, remove, push }) => (
-                  <div>
-                    {values.members.length > 0 &&
-                      values.members.map((member, index) => {
-                        console.log(index);
-                        return (
-                          <AddMember
-                            key={index}
-                            insert={insert}
-                            remove={remove}
-                            push={push}
-                            index={index}
-                          />
-                        );
-                      })}
-                    {renderAddMemButton(values, push)}
-                  </div>
-                )}
-              </FieldArray>
               <MySelect label="Team Leader" name="TeamLeader">
                 {renderOptions(values)}
               </MySelect>
