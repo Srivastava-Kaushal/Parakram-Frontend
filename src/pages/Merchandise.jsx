@@ -33,8 +33,8 @@ const MerchandisePage = () => {
   };
   return (
     <div className="h-[500px] bg-[#0f0d09]">
-      {/* <ComingSoon /> */}
-      <div className="h-[400px]">
+      <ComingSoon />
+      {/* <div className="h-[400px]">
         <Carousel slideInterval={2000}>
           <img
             src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
@@ -172,7 +172,7 @@ const MerchandisePage = () => {
             </Button>
           </Modal.Footer>
         </Modal>
-      </div>
+      </div> */}
     </div>
   );
 };
