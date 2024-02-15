@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <Fragment>
-      <Disclosure as="nav" className="sticky top-0 z-30 w-full">
+      <Disclosure as="nav" className="sticky top-0 z-30 w-">
         {({ open }) => (
           <div className="bg-[#0f0d09] ">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
