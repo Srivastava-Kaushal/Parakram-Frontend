@@ -5,6 +5,7 @@ import { Button } from "flowbite-react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import APIRoute from "../../utils/routes";
 
 const OtpForm = (props) => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const OtpForm = (props) => {
     try {
       const userId = localStorage.getItem("userId");
       const { data } = await axios.post(
-        "http://localhost:8000/api/verifyOtp",
+        `${APIRoute}/api/verifyOtp`,
         { Otp: values.otp, userId: userId },
         { withCredentials: true }
       );

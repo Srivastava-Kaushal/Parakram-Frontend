@@ -6,6 +6,7 @@ import { animateScroll as scroll } from "react-scroll";
 import IndForm from "../components/RegistrationForm/individualForm";
 import axios from "axios";
 import Loading from "../components/loader/loading";
+import APIRoute from "../utils/routes";
 
 const Register = () => {
   const { sport } = useParams();
@@ -15,11 +16,11 @@ const Register = () => {
     name: "cricket",
     type: "team",
   });
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const getData = async () => {
     try {
-      const res = await axios.get(`http:/parakaramapi/${sport}`);
+      const res = await axios.get(`${APIRoute}/api/event/register`,);
       setSportInfo(res.data);
       // console.log(res.data);
     } catch (err) {

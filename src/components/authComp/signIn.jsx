@@ -8,6 +8,7 @@ import OtpForm from "./otpform";
 import Emailform from "./emailInput";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import APIRoute from "../../utils/routes";
 
 const SignIp = () => {
   const [openModal, setOpenModal] = useState([false, false, false]);
@@ -19,7 +20,7 @@ const SignIp = () => {
     const {email} = values;
     localStorage.setItem("email" , email);
     console.log(email);
-    const {data} = await axios.post("http://localhost:8000/api/sendPassChangeOtp" , {email  :email} , {withCredentials : true});
+    const {data} = await axios.post(`${APIRoute}/api/sendPassChangeOtp` , {email  :email} , {withCredentials : true});
     const {success , message } = data;
     const {_id} = data.user;
     localStorage.setItem("userId", _id);
@@ -28,14 +29,14 @@ const SignIp = () => {
 
   const submitOtp = async(values) => {
     const userId = localStorage.getItem("userId");
-    const {data} = await axios.post("http://localhost:8000/api/verifyPassChangeOtp" , {userId : userId , Otp : values.otp} , {withCredentials : true});
+    const {data} = await axios.post(`${APIRoute}/api/verifyPassChangeOtp` , {userId : userId , Otp : values.otp} , {withCredentials : true});
     console.log(data);
     localStorage.setItem("hashedId" , data.token);
   }
   
   const submitNewPass = async(values) => {
     const userId = localStorage.getItem("hashedId");
-    const {data} = await axios.post("http://localhost:8000/api/changePass" , {newPass : values.password ,hashedUserId : userId } , {withCredentials : true});
+    const {data} = await axios.post(`${APIRoute}/api/changePass` , {newPass : values.password ,hashedUserId : userId } , {withCredentials : true});
     console.log(data);
     navigate("/signIn");
   }
@@ -43,12 +44,12 @@ const SignIp = () => {
   const navigate = useNavigate();
   const onSubmit = async (values) => {
     const { data } = await axios.post(
-      "http://localhost:8000/api/login",
+      `${APIRoute}/api/login`,
       values,
       { withCredentials: true }
     );
     console.log("Hello");
-    navigate("/");
+    navigate("/home");
   };
 
   return (

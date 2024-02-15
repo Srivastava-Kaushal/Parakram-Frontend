@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/logo-svg.svg";
 import { IoMdMail } from "react-icons/io";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -29,7 +28,11 @@ function FooterT() {
           <div className="md:flex md:justify-between justify-center">
             <div className="mb-6 md:mb-0 flex-col justify-center items-center">
               <a href="/" className="flex items-center justify-center">
-                <img src={logo} className="md:h-20 h-[50px] me-3" alt="#" />
+                <img
+                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1708000698/logo_transparent_1_qytwbz.png"
+                  className="md:h-20 h-[50px] me-3"
+                  alt="#"
+                />
               </a>
               <div className="text-[#f2f1ef] font-medium text-sm md:text-base py-5 px-10 md:pr-10 flex justify-center items-center text-center">
                 PARAKRAM '24 <br />

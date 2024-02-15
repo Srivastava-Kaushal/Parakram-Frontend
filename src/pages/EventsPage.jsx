@@ -3,7 +3,7 @@ import EventsPageImg from '../assets/Images/EventsPageImg.jpg';
 import EventsList from '../components/EventsPageComponent/EventsList';
 import transition from '../transition';
 import { animateScroll as scroll } from 'react-scroll';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const container = {
 	hidden: { opacity: 0 },
@@ -40,10 +40,19 @@ const item3 = {
 };
 
 const Events = () => {
+	const [isSmall, setIsSmall] = useState(false);
 	useEffect(() => scroll.scrollToTop({ duration: 1000 }), []);
 
 	const ref = useRef(null);
 	const isInView = useInView(ref, { amount: 0.2, once: true, });
+
+	useEffect(() => {
+		const { innerWidth } = window;
+		if (innerWidth <= 1000) {
+			setIsSmall(true);
+			console.log('Dem , small screen');
+		}
+	}, []);
 
 	return (
 		<>
@@ -56,10 +65,11 @@ const Events = () => {
 				<motion.img
 					src={EventsPageImg}
 					alt="sport"
-					className="w-full"
+					className="object-cover"
+					style={(isSmall ? {height : "100svh"} : {width : "100%"}) }
 					variants={item1}
 				/>
-				<span className="absolute top-[40%] left-[50%] -translate-x-[50%] text-[#ffffff] font-bold z-20 text-[9rem] [text-shadow:_0_4px_4px_rgb(0,0,0)]">
+				<span className="text-[2.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] absolute top-[40%] left-[50%] -translate-x-[50%] text-[#ffffff] font-bold z-20 [text-shadow:_0_4px_4px_rgb(0,0,0)]">
 					<span className="sr-only">Events</span>
 					{'Events'.split('').map((letter, index) => (
 						<motion.span className="inline-block" key={index} variants={item2}>

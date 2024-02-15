@@ -6,6 +6,7 @@ import { useState } from "react";
 import OtpForm from "./otpform";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import APIRoute from "../../utils/routes";
 
 const SignUp = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -16,7 +17,7 @@ const SignUp = () => {
     try {
       const userId = localStorage.getItem("userId");
       const { data } = await axios.post(
-        "http://localhost:8000/api/verifyOtp",
+        `${APIRoute}/api/verifyOtp`,
         { Otp: values.otp, userId: userId },
         { withCredentials: true }
       );
@@ -25,7 +26,7 @@ const SignUp = () => {
       console.log(data);
       if (success) {
         console.log("Success");
-        navigate("/");
+        navigate("/home");
       }
     } catch (e) {
       console.log(e);
@@ -36,7 +37,7 @@ const SignUp = () => {
     try {
       // const {email ,username , password} = values;
       const { data } = await axios.post(
-        "http://localhost:8000/api/register",
+        `${APIRoute}/api/register`,
         values,
         {
           withCredentials: true,
