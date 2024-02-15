@@ -1,10 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Carousel } from "flowbite-react";
-// import img5 from "../assets/images/cri1.jpg";
-// import img6 from "../assets/images/cri3.jpg";
-// import img7 from "../assets/images/bas6.jpg";
-// import img8 from "../assets/images/ls4.jpg";
-// import img9 from "../assets/images/bas4.jpg";
 import transition from "../transition";
 import { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
