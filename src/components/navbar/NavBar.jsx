@@ -4,7 +4,6 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import Footer from "../footer/Footer";
 // import { AnimatePresence } from "framer-motion";
-import logo from "../../assets/logo-svg.svg";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -43,7 +42,11 @@ const NavBar = () => {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-2xl font-bold">
                   <Link to="/" className="flex flex-shrink-0 items-center">
-                    <img src={logo} height={50} width={120} />
+                    <img
+                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1708000698/logo_transparent_1_qytwbz.png"
+                      height={50}
+                      width={120}
+                    />
                   </Link>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
