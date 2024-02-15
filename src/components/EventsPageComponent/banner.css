@@ -1,0 +1,13 @@
+@media screen and (min-width: 100px) and (max-width: 800px) {
+    .blurry-div{
+        top : 0px;
+        height: 100vh !important;
+        width: 120vw !important;
+    }
+}
+
+.blurry-div{
+    top : 0px;
+    height: 120vh ;
+    width: 80vw ; 
+}

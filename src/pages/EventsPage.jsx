@@ -49,6 +49,7 @@ const Events = () => {
 		<>
 			<motion.div
 				className="relative"
+				style={{height : "100vh"}}
 				variants={container}
 				initial="hidden"
 				animate="show"
@@ -56,10 +57,11 @@ const Events = () => {
 				<motion.img
 					src={EventsPageImg}
 					alt="sport"
-					className="w-full"
+					className="object-cover"
+					style={{height : "100%"}}
 					variants={item1}
 				/>
-				<span className="absolute top-[40%] left-[50%] -translate-x-[50%] text-[#ffffff] font-bold z-20 text-[9rem] [text-shadow:_0_4px_4px_rgb(0,0,0)]">
+				<span className="text-[2.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] absolute top-[40%] left-[50%] -translate-x-[50%] text-[#ffffff] font-bold z-20 [text-shadow:_0_4px_4px_rgb(0,0,0)]">
 					<span className="sr-only">Events</span>
 					{'Events'.split('').map((letter, index) => (
 						<motion.span className="inline-block" key={index} variants={item2}>
@@ -68,7 +70,7 @@ const Events = () => {
 					))}
 				</span>
 			</motion.div>
-			<div className="bg-gradient-to-b from-[#070707] via-[#232222] to-[#232222] relative">
+			<div className="bg-gradient-to-b from-[#070707] via-[#232222] to-[#232222] relative w-[100vw]">
 				<motion.div
 					ref={ref}
 					className="py-6 text-4xl text-white text-center"
