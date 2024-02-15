@@ -13,8 +13,6 @@ const Register = () => {
     // default mai kuch  nahi likhna hai
     // isko hata dena jab api lagayenge tab
     name: "cricket",
-    maxTeamLength: 5,
-    minTeamLength: 2,
     type: "team",
   });
   const [loading, setLoading] = useState(true);
@@ -41,13 +39,7 @@ const Register = () => {
       return <Loading />;
     }
     if (SportInfo.type == "team") {
-      return (
-        <Form
-          heading={SportInfo.name}
-          maxTeamLength={SportInfo.maxTeamLength}
-          minTeamLength={SportInfo.minTeamLength}
-        />
-      );
+      return <Form heading={SportInfo.name} />;
     } else {
       return <IndForm heading={SportInfo.heading} />;
     }

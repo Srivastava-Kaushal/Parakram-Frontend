@@ -12,23 +12,51 @@ function Accomodation() {
   const CardDetails = [
     {
       title: "Platinum",
-      discription: "discription of this package will be available soon",
-      price: 2000,
+      modalDisc:
+        "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1949/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Three meals per day for three days (Breakfast, Lunch and Dinner) Accommodation inside campus (For 3 days) Transportation to and fro the Railway station to IIT-ISM Campus An attractive welcome kit for each participant. Pro Nights ( EDM night, Band night etc) Refreshments in between the matches Merchandise(Jacket) ",
+      discription:
+        "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1949/- (Non-Refundable)",
+      price: 1949,
     },
     {
       title: "Gold",
-      discription: "discription of this package will be available soon",
-      price: 2000,
+      modalDisc:
+        "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1549/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Three meals per day for three days (Breakfast, Lunch and Dinner) Accommodation inside campus (For 3 days) Transportation to and fro the Railway station to IIT-ISM Campus An attractive welcome kit for each participant. Pro Nights (EDM night, Band night etc) Refreshments in between the matches Merchandise(T-Shirt) ",
+      discription:
+        "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1549/- (Non-Refundable)",
+      price: 1549,
     },
     {
       title: "Silver",
-      discription: "discription of this package will be available soon",
-      price: 2000,
+      modalDisc:
+        "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1199/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Three meals per day for three days (Breakfast, Lunch and Dinner) Accommodation inside campus (For 3 days) Transportation to and fro the Railway station to IIT ISM Campus An attractive welcome kit for each participant. Pro Nights (EDM night, Band Night etc) Refreshments in between the matches",
+      discription:
+        "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1199/- (Non-Refundable)",
+      price: 1199,
     },
     {
       title: "Bronze",
-      discription: "discription of this package will be available soon",
-      price: 2000,
+      modalDisc:
+        "For those who don‘t want to stay in the IIT-ISM campus A registration fee of Rs. 1299/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees An attractive welcome kit for each participant. Pro Nights (EDM night, Band Night etc) Refreshments in between the matches Merchandise(Jacket) ",
+      discription:
+        "For those who don‘t want to stay in the IIT-ISM campus A registration fee of Rs. 1299/- (Non-Refundable)",
+      price: 1299,
+    },
+    {
+      title: "clay",
+      modalDisc:
+        "For those who doesn't want to stay in the IIT-ISM campus A registration fee of Rs. 899/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees An attractive welcome kit for each participant. Pro Nights (EDM night, Band Night etc) Refreshments in between the matches Merchandise(T-shirt) ",
+      discription:
+        "For those who doesn't want to stay in the IIT-ISM campus A registration fee of Rs. 899/- (Non-Refundable)",
+      price: 899,
+    },
+    {
+      title: "air",
+      modalDisc:
+        "For those who don’t want to stay in the IIT-ISM campus A registration fee of Rs. 399/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Pro Nights (EDM night, Band Night etc) Refreshments in between the matches",
+      discription:
+        "For those who don’t want to stay in the IIT-ISM campus A registration fee of Rs. 399/- (Non-Refundable)",
+      price: 399,
     },
   ];
   return (

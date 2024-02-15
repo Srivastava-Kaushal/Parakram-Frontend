@@ -31,6 +31,7 @@ const ProfilePage = () => {
       return <Loading />;
     } else {
       return <ProfileBuild onSubmit={onSubmit} user={user} />;
+      
     }
   };
 
