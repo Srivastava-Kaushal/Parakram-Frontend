@@ -140,7 +140,7 @@ function FooterT() {
                         className="hover:underline text-xs sm:text-sm md:text-base text-[#e6aa1e] flex items-center justify-start gap-x-3 sm:gap-x-5"
                       >
                         <FaPhoneAlt className="text-[#e6aa1e] text-lg sm:text-xl" />
-                        9637111550
+                        9963981308
                       </a>
                     </li>
                     <li className="mb-4">
