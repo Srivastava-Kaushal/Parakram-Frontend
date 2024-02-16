@@ -4,12 +4,12 @@ import teams from "./coreteam.jsx";
 export const Teampage = () => {
   return (
     <>
-      <div className="pt-7 flex justify-center">
+      {/* <div className="pt-7 flex justify-center">
         <h1 className="flex justify-center text-2xl mt-10 font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
           Convenor
         </h1>
-      </div>
-      <sectionTeam>
+      </div> */}
+      {/* <sectionTeam>
         <div className="max-w-sm border border-gray-200 mb-11 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div className="popular-block col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
             <div className="inner-box bg-[#dad3a5]">
@@ -145,12 +145,12 @@ export const Teampage = () => {
             ></path>
           </svg>
         </div>
-      </sectionTeam>
+      </sectionTeam> */}
 
       <div className="bg-[#202731]">
-        <h1 className="flex justify-center mb-8 text-2xl pt-10 font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
+        {/* <h1 className="flex justify-center mb-8 text-2xl pt-10 font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
           Core Team
-        </h1>
+        </h1> */}
         <div className="text-white">
           <div className="teams flex-wrap flex pt-[80px] w-full">
             {teams.map((person, index) => (
@@ -163,40 +163,13 @@ export const Teampage = () => {
       <div className="spacer layer2 flip"></div>
 
       <sectionTeam className="pink">
-        <div className="blob-content">
-          <h1 className="underline drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)] flex justify-center mb-8 text-4xl font-bold tracking-tight leading-none text-[#dad3a5] md:text-6xl">
+        <div className="blob-content bg-[#0f0d09]">
+          <h1 className="underline drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)] flex justify-center mb-8 pt-10 text-4xl font-bold tracking-tight leading-none text-[#dad3a5] md:text-6xl">
             Developers
           </h1>
           <div className="typebody">
-            <div className="content">
-              <div className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)] flex justify-center mb-8 text-2xl font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
-                Web
-              </div>
+            <div className="content max-w-screen w-full flex justify-center items-center">
               <div className="team grid md:grid-cols-2 grid-cols-1">
-                <div className="member co-frontend">
-                  <div className="thumb my-3 ">
-                    <img
-                      className="object-cover"
-                      src="https://res.cloudinary.com/dkdratnao/image/upload/v1705143321/me_bykddm.jpg"
-                    />
-                  </div>
-                  <div className="description">
-                    <h3>Harsh Singh</h3>
-                    <p>
-                      <br />
-                      <br />
-                      <a
-                        className="m-4"
-                        href="https://www.instagram.com/hharsha_s/"
-                      >
-                        @instagram
-                      </a>
-                      <a href="https://www.linkedin.com/in/harsh-singh-69523a193/">
-                        @linkedin
-                      </a>
-                    </p>
-                  </div>
-                </div>
                 <div className="member co-frontend">
                   <div className="thumb my-3">
                     <img
@@ -225,27 +198,150 @@ export const Teampage = () => {
                   <div className="thumb my-3">
                     <img
                       className="object-cover"
-                      src="https://res.cloudinary.com/dkdratnao/image/upload/v1704435839/manav_if1tvj.jpg"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1708078411/WhatsApp_Image_2024-02-16_at_14.48.19_x6cmsm.jpg"
                     />
                   </div>
                   <div className="description">
-                    <h3>Manav Sharma</h3>
+                    <h3>Yash Sharma</h3>
                     <p className="">
                       <br />
                       <br />
                       <a
                         className="m-4"
-                        href="https://www.instagram.com/mysticalmanav?igsh=OGQ5ZDc2ODk2ZA=="
+                        href="https://www.instagram.com/yoder2k4/"
                       >
                         @instagram
                       </a>
-                      <a href="https://www.linkedin.com/in/manav-sharma-263092250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                      <a href="https://www.linkedin.com/in/yash-sharma-313317255/">
+                        @linkedin
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div className="member co-frontend ">
+                  <div className="thumb my-3">
+                    <img
+                      className="object-cover"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1708079876/WhatsApp_Image_2024-02-16_at_16.01.03_qseijl.jpg"
+                    />
+                  </div>
+                  <div className="description">
+                    <h3>Marmick Mathur</h3>
+                    <p className="">
+                      <br />
+                      <br />
+                      <a
+                        className="m-4"
+                        href="https://www.instagram.com/marmick5/"
+                      >
+                        @instagram
+                      </a>
+                      <a href="https://www.linkedin.com/in/marmick-mathur-20b406256/">
+                        @linkedin
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div className="member co-frontend ">
+                  <div className="thumb my-3">
+                    <img
+                      className="object-cover"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1708079015/IMG_20240216_154753_tudk4c.jpg"
+                    />
+                  </div>
+                  <div className="description">
+                    <h3>Ayush Barman</h3>
+                    <p className="">
+                      <br />
+                      <br />
+                      <a
+                        className="m-4"
+                        href="https://www.instagram.com/barman_ayush_01/"
+                      >
+                        @instagram
+                      </a>
+                      <a href="https://www.linkedin.com/in/ayush-barman-4856b3229/">
+                        @linkedin
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div className="member co-frontend ">
+                  <div className="thumb my-3">
+                    <img
+                      className="object-cover"
+                      src="https://res.cloudinary.com/dkdratnao/image/upload/v1704435839/prakkharSri_yxwzbx.jpg"
+                    />
+                  </div>
+                  <div className="description">
+                    <h3>Prakhar Srivastava</h3>
+                    <p className="">
+                      <br />
+                      <br />
+                      <a
+                        className="m-4"
+                        href="https://www.instagram.com/prakhar_227?igsh=MWF1Z2N5cHVld3gxMw=="
+                      >
+                        @instagram
+                      </a>
+                      <a href="https://www.linkedin.com/in/prakhar-srivastava-556651255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                         @linkedin
                       </a>
                     </p>
                   </div>
                 </div>
                 <div className="member co-backend">
+                  <div className="thumb my-3 ">
+                    <img
+                      className="object-cover"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1708078762/WhatsApp_Image_2024-02-16_at_15.22.37_d7zgvk.jpg"
+                    />
+                  </div>
+                  <div className="description">
+                    <h3>Harsh Singh</h3>
+                    <p>
+                      <br />
+                      <br />
+                      <a
+                        className="m-4"
+                        href="https://www.instagram.com/hharsha_s/"
+                      >
+                        @instagram
+                      </a>
+                      <a href="https://www.linkedin.com/in/harsh-singh-69523a193/">
+                        @linkedin
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div className="md:col-span-2 flex justify-center">
+                  <div className="member co-backend ">
+                    <div className="thumb my-3">
+                      <img
+                        className="object-cover"
+                        src="https://res.cloudinary.com/dhriluafq/image/upload/v1708078676/WhatsApp_Image_2024-02-16_at_15.40.44_gjyixe.jpg"
+                      />
+                    </div>
+                    <div className="description">
+                      <h3>Shubham Dey</h3>
+                      <p className="">
+                        <br />
+                        <br />
+                        <a
+                          className="m-4"
+                          href="https://www.instagram.com/subhamdey610?igsh=MTBzc2twNmdtc2prZQ=="
+                        >
+                          @instagram
+                        </a>
+                        <a href="https://www.linkedin.com/in/subham-dey-269096253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                          @linkedin
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <div className="member co-backend">
                   <div className="thumb my-3">
                     <img
                       className="object-cover"
@@ -294,9 +390,9 @@ export const Teampage = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
-              <div className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)] flex justify-center mb-8 text-2xl font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
+              {/* <div className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)] flex justify-center mb-8 text-2xl font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
                 App
               </div>
               <div className="team grid md:grid-cols-2 grid-cols-1">
@@ -374,7 +470,7 @@ export const Teampage = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
