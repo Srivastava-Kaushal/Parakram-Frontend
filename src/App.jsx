@@ -10,6 +10,7 @@ import Accomodation from "./pages/Accomodation";
 import NoPage from "./pages/NoPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import RedirectToHomePage from "./pages/RedirectToHomePage/RedirectToHome";
+import Team from "./pages/Team";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
           <Route path="/events" element={<EventsPage />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/accomodation" element={<Accomodation />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
