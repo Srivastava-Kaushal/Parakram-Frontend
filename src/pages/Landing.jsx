@@ -148,7 +148,7 @@ const LandingPage = () => {
                       className="text-6xl flex justify-center font-extrabold tracking-tight leading-none uppercase text-[#f2f1ef] md:text-5xl lg:text-6xl"
                     >
                       <img
-                        src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1708000698/logo_transparent_1_qytwbz.png"
+                        src="https://res.cloudinary.com/dhriluafq/image/upload/v1708243181/logo_transparent_2_bklco4.png"
                         width="450px"
                       />
                     </motion.h1>
