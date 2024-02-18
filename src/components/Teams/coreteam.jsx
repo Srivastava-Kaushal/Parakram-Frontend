@@ -61,9 +61,9 @@ const teams = [
   {
     name: "Kushal Sharma ",
     position: "Head",
-    team: "Hospitality Team", //heic file
+    team: "Hospitality Team",
     image:
-      "https://drive.google.com/file/d/1uzMxBOW00v-BdLwYT34IT9s7etpX6nxL/view?usp=drive_link",
+      "https://res.cloudinary.com/dhriluafq/image/upload/v1708246039/kushal_Hospitality_l4g0ed.jpg",
   },
   {
     name: "Sambhrant Dora",
@@ -142,9 +142,9 @@ const teams = [
   {
     name: "T Lakshmi Ganeswar Reddy",
     position: "Head",
-    team: "Security Team", //heic file
+    team: "Security Team",
     image:
-      "https://drive.google.com/file/d/1O_8Cc4ncpvrjTbqQeQSc8lcxELIsasCS/view?usp=drive_link",
+      "https://res.cloudinary.com/dhriluafq/image/upload/v1708246144/Ganesh_Security.jpg_htaxqa.jpg",
   },
   {
     name: "Dhananjay Singh Shekhawat",
