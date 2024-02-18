@@ -10,11 +10,11 @@ const AboutUs = () => {
 	}, []);
 
 	return (
-		<div className="min-h-screen relative">
-			<img src={BgImage} alt="bgimage" className="w-full fixed top-0 -z-10" />
+		<div className="min-h-screen relative w-full overflow-x-hidden">
+			<img src={BgImage} alt="bgimage" className="sm:w-full h-full fixed top-0 -z-10" />
 			<div className="w-full min-h-screen backdrop-blur-lg bg-black/20 flex flex-col items-center">
-				<h1 className="text-8xl font-bold text-white my-20">About Us</h1>
-				<p className="w-4/5 text-white text-xl text-justify mb-20">
+				<h1 className="text-5xl sm:text-8xl font-bold text-white my-20">About Us</h1>
+				<p className="w-4/5 text-white text-sm sm:text-xl text-justify mb-20">
 					The Indian Institute of Technology (Indian School of Mines), i.e., IIT
 					(ISM), is a premier engineering and research institution located in
 					the heart of the mineral-rich region of India in the city of Dhanbad.
@@ -33,18 +33,18 @@ const AboutUs = () => {
 					academic departments covering Engineering, Applied Sciences,
 					Humanities and Social Sciences, and Management studies.
 				</p>
-				<div className="w-4/5 my-10 py-10 px-10 backdrop-blur-sm bg-white/20 text-white rounded-3xl shadow-2xl flex flex-col items-center">
-					<div className='flex'>
-						<img src={Convener} alt="c" className='w-40 rounded-full mr-5' />
-						<span className='flex flex-col items-center justify-center ml-5'>
-							<span className='text-2xl pt-4'>Prof. Annavarapu Chandra Sekhara Rao</span>
+				<div className="w-11/12 sm:w-4/5 my-10 py-2 px-2 sm:py-10 sm:px-10 backdrop-blur-sm bg-white/20 text-white rounded-3xl shadow-2xl flex flex-col items-center">
+					<div className='sm:flex'>
+						<img src={Convener} alt="c" className='w-44 sm:w-40 rounded-full mx-auto sm:mr-5' />
+						<span className='flex flex-col items-center justify-center mx-auto sm:ml-5'>
+							<span className='text-2xl pt-4 text-center'>Prof. Annavarapu Chandra Sekhara Rao</span>
 							<span className='text-lg text-yellow-200'>Dept. of Computer Science & Engg.</span>
 						</span>
 					</div>
-					<h1 className="text-white text-5xl text-center py-5 font-bold">
+					<h1 className="text-white text-2xl sm:text-5xl text-center py-5 font-bold">
 						Convener’s Message
 					</h1>
-					<p className="px-10 py-5 text-md text-justify">
+					<p className="px-2 text-xs sm:px-10 sm:py-5 sm:text-base text-justify">
 						The combination of talent, hard effort, compassion, competitive
 						spirit, and enthusiasm is what makes sports great. It is the one
 						thing that, regardless of gender, age, color, religion, caste, or
@@ -64,7 +64,7 @@ const AboutUs = () => {
 						symphony of life, sports provide the rhythm, the discipline, and the
 						harmony that elevate us to the highest notes of achievement.”
 					</p>
-					<p className="px-10 py-5 text-md text-justify">
+					<p className="px-2 text-xs py-2 sm:px-10 sm:py-5 sm:text-base text-justify">
 						The goal of &apos;&apos;Parakram&apos;24&apos;&apos; is to provide
 						an equitable and level playing field where all individuals and teams
 						can showcase their full potential, both mentally and physically. As
