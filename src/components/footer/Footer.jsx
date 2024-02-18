@@ -29,7 +29,7 @@ function FooterT() {
             <div className="mb-6 md:mb-0 flex-col justify-center items-center">
               <a href="/" className="flex items-center justify-center">
                 <img
-                  src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1708000698/logo_transparent_1_qytwbz.png"
+                  src="https://res.cloudinary.com/dhriluafq/image/upload/v1708243181/logo_transparent_2_bklco4.png"
                   className="md:h-20 h-[50px] me-3"
                   alt="#"
                 />

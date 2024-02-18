@@ -44,7 +44,7 @@ const NavBar = () => {
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-2xl font-bold">
                   <Link to="/" className="flex flex-shrink-0 items-center">
                     <img
-                      src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1708000698/logo_transparent_1_qytwbz.png"
+                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1708243181/logo_transparent_2_bklco4.png"
                       height={50}
                       width={120}
                     />

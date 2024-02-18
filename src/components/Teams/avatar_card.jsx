@@ -10,7 +10,7 @@ const AvatarCard = ({ name, position, image, team }) => {
           <img
             src={
               image == ""
-                ? "https://res.cloudinary.com/dfr1kvie3/image/upload/v1708000698/logo_transparent_1_qytwbz.png"
+                ? "https://res.cloudinary.com/dhriluafq/image/upload/v1708243181/logo_transparent_2_bklco4.png"
                 : image
             }
             alt="avatar"
