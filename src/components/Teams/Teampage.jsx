@@ -323,7 +323,7 @@ export const Teampage = () => {
                       />
                     </div>
                     <div className="description">
-                      <h3>Shubham Dey</h3>
+                      <h3>Subham Dey</h3>
                       <p className="">
                         <br />
                         <br />
