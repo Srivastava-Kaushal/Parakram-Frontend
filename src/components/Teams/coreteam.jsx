@@ -119,13 +119,6 @@ const teams = [
       "https://res.cloudinary.com/dhriluafq/image/upload/v1708077468/Abhishek_Yadav_Operation_and_Logistics_Head_cqanqo.jpg",
   },
   {
-    name: "Sunil Kumar Rai",
-    position: "Head",
-    team: "Operations and Logistics Team",
-    image:
-      "https://res.cloudinary.com/dhriluafq/image/upload/v1708077487/Sunil_Kumar_Rar__Operation_and_Logistics_yhwuvr.jpg",
-  },
-  {
     name: "Mukul Agarwal",
     position: "Head",
     team: "Promotion and Marketing Team",
