@@ -1,11 +1,10 @@
-import React from "react";
 import { IoMdMail } from "react-icons/io";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function FooterT() {
   return (
@@ -35,18 +34,18 @@ function FooterT() {
                 />
               </a>
               <div className="text-[#f2f1ef] font-medium text-sm md:text-base py-5 px-10 md:pr-10 flex justify-center items-center text-center">
-                PARAKRAM '24 <br />
-                Defy odds, define legacy EAST INDIA'S LARGEST SPORTS FESTIVAL,
+                PARAKRAM &apos;24 <br />
+                Defy odds, define legacy EAST INDIA&apos;S LARGEST SPORTS FESTIVAL,
                 IIT (ISM), DHANBAD
               </div>
               <div className="scale-90 sm:flex sm:justify-end">
                 <a
-                  href="https://drive.google.com/file/d/1qxDJm5xyqs8TySYLM2pBd0GWTS0zOk1i/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1m-R-CRPPjHHP30zZTs293OvfZKwFh9dC/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex justify-center items-center"
                 >
-                  <button
+                  <motion.button
                     whileHover={{ y: -5 }}
                     type="button"
                     className="  backdrop-blur-lg bg-[#dad3a5] hover:bg-transparent font-medium rounded-lg text-sm px-3 text-center inline-flex items-center  text-[#090d06] hover:text-[#c9bc57] me-2 my-2"
@@ -64,7 +63,7 @@ function FooterT() {
                     <p className="p-3 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)]">
                       Events Brochure
                     </p>
-                  </button>
+                  </motion.button>
                 </a>
                 <a
                   href="https://drive.google.com/file/d/1ST66nTiMW_pwpS4uiiP6Oiq5hqWm4GuB/view?usp=sharing"
@@ -72,7 +71,7 @@ function FooterT() {
                   rel="noopener noreferrer"
                   className="flex justify-center items-center"
                 >
-                  <button
+                  <motion.button
                     whileHover={{ y: -5 }}
                     type="button"
                     className="  backdrop-blur-lg bg-[#dad3a5] hover:bg-transparent font-medium rounded-lg text-sm px-3 text-center inline-flex items-center  text-[#090d06] hover:text-[#c9bc57] me-2 my-2"
@@ -90,7 +89,7 @@ function FooterT() {
                     <p className="p-3 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)]">
                       Rulebook
                     </p>
-                  </button>
+                  </motion.button>
                 </a>
                 <a
                   href="https://drive.google.com/file/d/1zhVgGgWp5wOWLTPSqcK748Pwh-Z5ipYg/view?usp=sharing"
@@ -98,7 +97,7 @@ function FooterT() {
                   rel="noopener noreferrer"
                   className="flex justify-center items-center"
                 >
-                  <button
+                  <motion.button
                     whileHover={{ y: -5 }}
                     type="button"
                     className="  backdrop-blur-lg bg-[#dad3a5] hover:bg-transparent font-medium rounded-lg text-sm px-3 text-center inline-flex items-center  text-[#090d06] hover:text-[#c9bc57] me-2 my-2"
@@ -114,9 +113,9 @@ function FooterT() {
                       <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z" />
                     </svg>
                     <p className="p-3 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)]">
-                      NOC'24
+                      NOC&apos;24
                     </p>
-                  </button>
+                  </motion.button>
                 </a>
               </div>
             </div>

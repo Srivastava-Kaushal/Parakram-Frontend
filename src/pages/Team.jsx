@@ -1,4 +1,3 @@
-import React from "react";
 import "../components/Teams/Teams.css";
 import { Teampage } from "../components/Teams/Teampage";
 

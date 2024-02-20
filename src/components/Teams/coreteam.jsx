@@ -119,7 +119,7 @@ const teams = [
       "https://res.cloudinary.com/dhriluafq/image/upload/v1708077468/Abhishek_Yadav_Operation_and_Logistics_Head_cqanqo.jpg",
   },
   {
-    name: "Sunil Kumar Rar",
+    name: "Sunil Kumar Rai",
     position: "Head",
     team: "Operations and Logistics Team",
     image:

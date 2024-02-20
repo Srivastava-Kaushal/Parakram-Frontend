@@ -61,7 +61,7 @@ function Sponsors() {
               typography: { sm: "h6", xs: "h6", lg: "h4" },
             }}
           >
-            Our Sponsers
+            Our Sponsors
           </Typography>
         </Box>
         <Box sx={{ padding: "5px", marginTop: "18px" }}>
