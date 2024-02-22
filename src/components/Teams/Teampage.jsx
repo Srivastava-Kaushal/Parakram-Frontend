@@ -165,7 +165,7 @@ export const Teampage = () => {
       <sectionTeam className="pink">
         <div className="blob-content bg-[#0f0d09]">
           <h1 className="underline drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)] flex justify-center mb-8 pt-10 text-4xl font-bold tracking-tight leading-none text-[#dad3a5] md:text-6xl">
-            Developers
+            Developers(Web)
           </h1>
           <div className="typebody">
             <div className="content max-w-screen w-full flex justify-center items-center">
@@ -471,6 +471,37 @@ export const Teampage = () => {
                   </div>
                 </div>
               </div> */}
+            </div>
+          </div>
+          <h1 className="underline drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)] flex justify-center mb-8 pt-10 text-4xl font-bold tracking-tight leading-none text-[#dad3a5] md:text-6xl">
+            Developers(App)
+          </h1>
+          <div className="typebody">
+            <div className="content max-w-screen w-full flex justify-center items-center">
+              <div className="member co-frontend">
+                <div className="thumb my-3">
+                  <img
+                    className="object-cover"
+                    src="https://res.cloudinary.com/dgpgsuay1/image/upload/v1696327151/SAVE_20230819_073836_nuhp2p.jpg"
+                  />
+                </div>
+                <div className="description">
+                  <h3>Bhargav Gande</h3>
+                  <p className="">
+                    <br />
+                    <br />
+                    <a
+                      className="m-4"
+                      href="https://www.instagram.com/gande_bhargav_/"
+                    >
+                      @instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/bhargav-gande-544b18217/">
+                      @linkedin
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
