@@ -99,7 +99,7 @@ function AccCard(props) {
                 show={openModal}
                 onClose={() => setOpenModal(false)}
               >
-                <Modal.Header>Accomodation Form</Modal.Header>
+                <Modal.Header></Modal.Header>
                 <Modal.Body>
                   <div className="space-y-6">
                     <motion.form
@@ -131,12 +131,17 @@ function AccCard(props) {
                         </label>
                         <div>{props.modalDisc}</div>
                       </div>
-                      <button
+                      <div className="mb-4">
+                        <label htmlFor="size" className="block mb-2 text-sm">
+                          Accommodation can be selected while registering for a sport
+                        </label>
+                      </div>
+                      {/*<button
                         type="submit"
                         className="text-[#efede0] bg-[#3C91E6]/60 hover:bg-[#efede0] hover:text-[#514c08] focus:ring-2 focus:outline-none focus:ring-[#514c08]  rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center "
                       >
                         {loading ? "Placing Order" : "Pay"}
-                      </button>
+          </button>*/}
                     </motion.form>
                   </div>
                 </Modal.Body>
