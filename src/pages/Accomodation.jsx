@@ -11,7 +11,7 @@ const AccomodationPage = () => {
 
   const CardDetails = [
     {
-      title: "Platinum",
+      title: "option 1",
       modalDisc:
         "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1949/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Three meals per day for three days (Breakfast, Lunch and Dinner) Accommodation inside campus (For 3 days) Transportation to and fro the Railway station to IIT-ISM Campus An attractive welcome kit for each participant. Pro Nights ( EDM night, Band night etc) Refreshments in between the matches Merchandise(Jacket) ",
       discription:
@@ -19,7 +19,7 @@ const AccomodationPage = () => {
       price: 1949,
     },
     {
-      title: "Gold",
+      title: "option 2",
       modalDisc:
         "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1549/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Three meals per day for three days (Breakfast, Lunch and Dinner) Accommodation inside campus (For 3 days) Transportation to and fro the Railway station to IIT-ISM Campus An attractive welcome kit for each participant. Pro Nights (EDM night, Band night etc) Refreshments in between the matches Merchandise(T-Shirt) ",
       discription:
@@ -27,7 +27,7 @@ const AccomodationPage = () => {
       price: 1549,
     },
     {
-      title: "Silver",
+      title: "option 3",
       modalDisc:
         "For those who want to stay in the IIT-ISM campus A registration fee of Rs. 1199/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Three meals per day for three days (Breakfast, Lunch and Dinner) Accommodation inside campus (For 3 days) Transportation to and fro the Railway station to IIT ISM Campus An attractive welcome kit for each participant. Pro Nights (EDM night, Band Night etc) Refreshments in between the matches",
       discription:
@@ -35,7 +35,7 @@ const AccomodationPage = () => {
       price: 1199,
     },
     {
-      title: "Bronze",
+      title: "option 4",
       modalDisc:
         "For those who don‘t want to stay in the IIT-ISM campus A registration fee of Rs. 1299/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees An attractive welcome kit for each participant. Pro Nights (EDM night, Band Night etc) Refreshments in between the matches Merchandise(Jacket) ",
       discription:
@@ -43,7 +43,7 @@ const AccomodationPage = () => {
       price: 1299,
     },
     {
-      title: "clay",
+      title: "option 5",
       modalDisc:
         "For those who doesn't want to stay in the IIT-ISM campus A registration fee of Rs. 899/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees An attractive welcome kit for each participant. Pro Nights (EDM night, Band Night etc) Refreshments in between the matches Merchandise(T-shirt) ",
       discription:
@@ -51,7 +51,7 @@ const AccomodationPage = () => {
       price: 899,
     },
     {
-      title: "air",
+      title: "option 6",
       modalDisc:
         "For those who don’t want to stay in the IIT-ISM campus A registration fee of Rs. 399/- (Non-Refundable) per member of the contingent including participants, coaches, and accompanying staff (if any) include: Participation fees Pro Nights (EDM night, Band Night etc) Refreshments in between the matches",
       discription:
@@ -62,14 +62,14 @@ const AccomodationPage = () => {
 
   return (
     <div className="flex justify-center items-center bg-black">
-      <div className="my-20 grid sm:grid-cols-4 sm:gap-x-8 grid-cols-2 gap-y-4">
+      <div className="my-20 grid sm:grid-cols-3 sm:gap-x-8 grid-cols-2  gap-y-4">
         {CardDetails.map((val, ind) => {
           return <AccCard {...val} key={ind} />;
         })}
       </div>
     </div>
   );
-}
+};
 
-const Accomodation = transition(AccomodationPage)
+const Accomodation = transition(AccomodationPage);
 export default Accomodation;
