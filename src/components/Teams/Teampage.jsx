@@ -222,7 +222,7 @@ export const Teampage = () => {
                   <div className="thumb my-3">
                     <img
                       className="object-cover"
-                      src="https://res.cloudinary.com/dhriluafq/image/upload/v1708079876/WhatsApp_Image_2024-02-16_at_16.01.03_qseijl.jpg"
+                      src="https://res.cloudinary.com/dmf9vpeu2/image/upload/v1708957830/WhatsApp_Image_2024-02-16_at_16.01.03_qseijl_ga41fg.jpg"
                     />
                   </div>
                   <div className="description">

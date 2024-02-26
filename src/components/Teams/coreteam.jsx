@@ -3,7 +3,7 @@ const teams = [
     name: "Valluri Agasthya",
     position: "Coordinator",
     team: "",
-    image: "",
+    image: "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1708957249/Agasthya_gjvty7.jpg",
   },
   {
     name: "Bhupender Ghosliya ",
@@ -130,7 +130,7 @@ const teams = [
     position: "Head",
     team: "Promotion and Marketing Team",
     image:
-      "https://res.cloudinary.com/dhriluafq/image/upload/v1708077648/ManishKumarJha_Promotion_Marketing.jpg_ritmrq.png",
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1708957620/ManishKumarJha_Promotion_Marketing_e6nbng.png",
   },
   {
     name: "T Lakshmi Ganeswar Reddy",

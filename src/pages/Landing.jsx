@@ -156,7 +156,7 @@ const LandingPage = () => {
                       variants={textAnimate2}
                       initial="hidden"
                       animate="show"
-                      className="font-bold overflow-hidden glow lg:text-6xl text-4xl text-[#ffc946] sm:px-12 lg:px-30"
+                      className="font-bold overflow-hidden glow lg:text-5xl text-5xl text-[#ffc946] sm:px-12 lg:px-30"
                     >
                       {/* <Countdown /> */}
                       Parakram &apos;24
@@ -165,7 +165,7 @@ const LandingPage = () => {
                       variants={textAnimate2}
                       initial="hidden"
                       animate="show"
-                      className="mb-2 overflow-x-hidden lg:text-5xl text-3xl font-bold text-[#b92f2f] sm:px-12 py-2 lg:px-30"
+                      className="mb-2 overflow-x-hidden lg:text-4xl text-3xl font-bold text-[#b92f2f] sm:px-12 py-2 lg:px-30"
                     >
                       {/* <Countdown /> */}
                       Defy odds, Define Legacy
