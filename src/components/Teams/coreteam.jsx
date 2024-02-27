@@ -3,7 +3,8 @@ const teams = [
     name: "Valluri Agasthya",
     position: "Coordinator",
     team: "",
-    image: "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1708957249/Agasthya_gjvty7.jpg",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1708957249/Agasthya_gjvty7.jpg",
   },
   {
     name: "Bhupender Ghosliya ",
@@ -25,6 +26,13 @@ const teams = [
       "https://res.cloudinary.com/dhriluafq/image/upload/v1708076729/img1_ci3xgr.jpg",
   },
   {
+    name: "SVSN Naidu ",
+    position: "Head",
+    team: "Event Team",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1708970713/naidu_event_xhfizs.jpg",
+  },
+  {
     name: "Akarapu Bhageerath ",
     position: "Head",
     team: "Event Team",
@@ -37,12 +45,6 @@ const teams = [
     team: "Event Team",
     image:
       "https://res.cloudinary.com/dhriluafq/image/upload/v1708076866/Gugulothu_Karthik_Event_Head_tjpylm.jpg",
-  },
-  {
-    name: "SVSN Naidu ",
-    position: "Head",
-    team: "Event Team",
-    image: "",
   },
   {
     name: "Guna Charan ",
@@ -75,7 +77,8 @@ const teams = [
     name: "VLD Devi",
     position: "Head",
     team: "Hospitality Team",
-    image: "",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709057806/Devi_hospitality_hooh6h.jpg",
   },
   {
     name: "Ganesula Yeshwanth",
@@ -201,7 +204,7 @@ const teams = [
     name: "Pulipati Sai Nikhil",
     position: "Head",
     team: "Technical and Support Team",
-    image: "",
+    image: "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1708970968/nikhil_tech_lrpxin.jpg",
   },
   {
     name: "Chirag Gajana",
