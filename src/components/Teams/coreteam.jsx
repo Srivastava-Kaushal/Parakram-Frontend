@@ -16,7 +16,8 @@ const teams = [
     name: "Yash Murarka ",
     position: "Co-Coordinator",
     team: "",
-    image: "",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709409883/Yash_Murarka_CC_jqg4g5.jpg",
   },
   {
     name: "Kapil Yadav ",
@@ -71,7 +72,8 @@ const teams = [
     name: "Sambhrant Dora",
     position: "Head",
     team: "Hospitality Team",
-    image: "",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709453254/Sambhrant_Dora_Hospitality_team_vcb6e6.jpg",
   },
   {
     name: "VLD Devi",
@@ -91,7 +93,8 @@ const teams = [
     name: "Harsha Agarwal",
     position: "Head",
     team: "Sponsorship and Alumini Connect Team",
-    image: "",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709453305/Harsha_agrawal_sponsorship_head_mfk5ve.jpg",
   },
   {
     name: "T Raghu Vamshi Reddy",
@@ -152,13 +155,15 @@ const teams = [
     name: "K Vivek",
     position: "Head",
     team: "Content and Documentation Team",
-    image: "",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709453587/K_Vivek_Content_and_documentation_head_uc6bpe.jpg",
   },
   {
     name: "Disha Mewara",
     position: "Head",
     team: "Content and Documentation Team",
-    image: "",
+    image: 
+      "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709409560/Disha_Mewara_content_doc_bnedz2.jpg",
   },
   {
     name: "Shubham Kumar Kurrey",
@@ -192,13 +197,15 @@ const teams = [
     name: "Divyansh Sharma",
     position: "Head",
     team: "Public Relations Team",
-    image: "",
+    image:
+     "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709453798/DivyanshSharma_Pr_Team_jtmw0m.jpg",
   },
   {
     name: "R S N Sasmith",
     position: "Head",
     team: "Technical and Support Team",
-    image: "",
+    image:
+     "https://res.cloudinary.com/dmf9vpeu2/image/upload/v1709453418/Sasmith_Reddy_Tech_team_pqvsqy.jpg",
   },
   {
     name: "Pulipati Sai Nikhil",
