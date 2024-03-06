@@ -4,12 +4,12 @@ import teams from "./coreteam.jsx";
 export const Teampage = () => {
   return (
     <>
-      {/* <div className="pt-7 flex justify-center">
-        <h1 className="flex justify-center text-2xl mt-10 font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
+      <div className="pt-7  flex justify-center">
+        <h1 className="flex justify-center mb-8 text-2xl mt-10 font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
           Convenor
         </h1>
-      </div> */}
-      {/* <sectionTeam>
+      </div>
+      <sectionTeam className="flex justify-center">
         <div className="max-w-sm border border-gray-200 mb-11 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div className="popular-block col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
             <div className="inner-box bg-[#dad3a5]">
@@ -17,18 +17,18 @@ export const Teampage = () => {
                 <div className="flex justify-center p-5">
                   <img
                     className="rounded-[100%]"
-                    src="https://res.cloudinary.com/dfr1kvie3/image/upload/v1703957539/prof_convener_mojstc.jpg"
+                    src="https://res.cloudinary.com/dzmrngj31/image/upload/v1709715399/acs_rao_hwd9cq.jpg"
                     alt=""
                   />
                 </div>
                 <div className="p-5">
                   <a>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Prof. Sanjoy Mandal
+                      Prof. A C S Rao
                     </h5>
                   </a>
                   <p className="mb-3 font-semibold text-gray-700 dark:text-gray-400">
-                    Dept. of Electrical Engineering
+                    Dept. of Computer Science and Engineering
                   </p>
                 </div>
               </div>
@@ -37,11 +37,13 @@ export const Teampage = () => {
         </div>
       </sectionTeam>
 
-      <sectionTeam className="bg-[#dad3a5]">
+      <sectionTeam className="flex justify-center bg-[#dad3a5]">
         <h1 className="pt-20 flex justify-center mb-8 text-2xl mt-10 font-bold tracking-tight leading-none text-[#202731] md:text-4xl">
           Co-Convenor
         </h1>
-        <div className="md:flex">
+      </sectionTeam>
+      <sectionTeam className="flex justify-center bg-[#dad3a5]">
+        <div className="md:flex ">
           <div className="grid md:grid-cols-2 grid-cols-1">
             <div className="max-w-sm border border-gray-200 mb-11 mx-4 rounded-lg shadow bg-[#202731]">
               <div className="popular-block col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -52,18 +54,18 @@ export const Teampage = () => {
                         className="rounded-[100%]"
                         width={"200px"}
                         height={"200px"}
-                        src="https://res.cloudinary.com/dkdratnao/image/upload/v1704404941/Co-convenor_xoepnr.png"
+                        src="https://res.cloudinary.com/dzmrngj31/image/upload/v1709715423/kp_ajit_njtdvj.jpg"
                         alt=""
                       />
                     </div>
                     <div className="p-5">
                       <a>
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#dad3a5] dark:text-white">
-                          Prof. Arijit Baral
+                          Prof. K P Ajit
                         </h5>
                       </a>
                       <p className="mb-3 font-semibold text-[#69644e] dark:text-gray-400">
-                        Dept. of Electrical Engineering
+                        Dept. of Mechanical Engineering
                       </p>
                     </div>
                   </div>
@@ -79,18 +81,18 @@ export const Teampage = () => {
                         className="rounded-[100%]"
                         width={"200px"}
                         height={"200px"}
-                        src="https://res.cloudinary.com/dkdratnao/image/upload/v1704403824/Co-convenor2_qp0smn.png"
+                        src="https://res.cloudinary.com/dzmrngj31/image/upload/v1709715399/dv_bhaskar_ngkfi1.jpg"
                         alt=""
                       />
                     </div>
                     <div className="p-5">
                       <a>
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#dad3a5] dark:text-white">
-                          Prof. Suresh K Yatirajula
+                          Prof. D V Bhaskar
                         </h5>
                       </a>
                       <p className="mb-3 font-semibold text-[#69644e] dark:text-gray-400">
-                        Dept. of Chemical Engineering
+                        Dept. of Electrical Engineering
                       </p>
                     </div>
                   </div>
@@ -99,10 +101,15 @@ export const Teampage = () => {
             </div>
           </div>
         </div>
+      </sectionTeam>
+      <sectionTeam className="flex justify-center bg-[#dad3a5]">
+        <h1 className="pt-20 flex justify-center mb-8 text-2xl mt-10 font-bold tracking-tight leading-none text-[#202731] md:text-4xl">
+          Treasurer
+        </h1>
+      </sectionTeam>
+      <sectionTeam className="flex justify-center bg-[#dad3a5]">
         <div>
-          <h1 className="pt-20 flex justify-center mb-8 text-2xl mt-10 font-bold tracking-tight leading-none text-[#202731] md:text-4xl">
-            Treasurer
-          </h1>
+
           <div className="max-w-sm border border-gray-200 mx-4 mb-11 rounded-lg shadow bg-[#202731]">
             <div className="popular-block col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
               <div className="inner-box bg-[#202731]">
@@ -112,18 +119,18 @@ export const Teampage = () => {
                       className="rounded-[100%]"
                       width={"200px"}
                       height={"200px"}
-                      src="https://res.cloudinary.com/dkdratnao/image/upload/v1704473056/madhulika_gupta_ye3xav.jpg"
+                      src="https://res.cloudinary.com/dzmrngj31/image/upload/v1709715423/suchitra_e180vh.jpg"
                       alt=""
                     />
                   </div>
                   <div className="p-5">
                     <a>
                       <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#dad3a5] dark:text-white">
-                        Prof. Madhulika Gupta
+                        Prof. Sucharita Majhi
                       </h5>
                     </a>
                     <p className="mb-3 font-semibold text-[#69644e] dark:text-gray-400">
-                      Dept. of Chemistry and Chemical Biology
+                      Dept. of Humanities and Social Sciences
                     </p>
                   </div>
                 </div>
@@ -145,13 +152,13 @@ export const Teampage = () => {
             ></path>
           </svg>
         </div>
-      </sectionTeam> */}
+      </sectionTeam>
 
       <div className="bg-[#202731]">
-        {/* <h1 className="flex justify-center mb-8 text-2xl pt-10 font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
-          Core Team
-        </h1> */}
         <div className="text-white">
+          <h1 className="flex justify-center mb-8 text-2xl pt-10 font-bold tracking-tight leading-none text-[#dad3a5] md:text-4xl">
+            Core Team
+          </h1>
           <div className="teams flex-wrap flex pt-[80px] w-full">
             {teams.map((person, index) => (
               <AvatarCard key={index} {...person} />

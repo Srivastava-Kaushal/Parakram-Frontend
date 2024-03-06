@@ -1,5 +1,11 @@
 const teams = [
   {
+    name:"Hemanth Reddy",
+    position:"President, Students' Gymkhana",
+    team: "",
+    image:"https://res.cloudinary.com/dzmrngj31/image/upload/v1709715401/hemant_reddy_nrbuad.jpg"
+  },
+  {
     name: "Valluri Agasthya",
     position: "Coordinator",
     team: "",
