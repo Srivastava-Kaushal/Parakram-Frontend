@@ -62,7 +62,7 @@ const AccomodationPage = () => {
 
   return (
     <div className="flex justify-center items-center bg-black">
-      <div className="my-20 grid sm:grid-cols-3 sm:gap-x-8 grid-cols-2  gap-y-4">
+      <div className="my-20 grid sm:grid-cols-3 sm:gap-x-8 grid-cols-1  gap-y-4">
         {CardDetails.map((val, ind) => {
           return <AccCard {...val} key={ind} />;
         })}
