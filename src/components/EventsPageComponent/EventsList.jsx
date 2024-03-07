@@ -22,14 +22,14 @@ const EventsList = () => {
         sportImg={FootballImg}
         sportName={"Football"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLScN42V1fYMVrFD2I0hqnY76uhGpiJoDQRABQ8_IG9Wbz_W8pA/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1-Vt8vnict1cA2bhczq2ZTfW8U8UIpic_/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={CricketImg}
         sportName={"Cricket"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLScVKsYEMnR7VE-ZC7e7mTHzMFLGQB4HqOuczmOIALBwe-BEVw/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1pv1U7tPyUFb6kuCD7dlmC8E8BEu97LY7/view?usp=sharing"
         }
       />
       <SportBanner
@@ -43,70 +43,70 @@ const EventsList = () => {
         sportImg={VolleyballImg}
         sportName={"Volleyball"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSesHa1BiLBuHtDSlEo0cEJiDnAsbuwH807c93ADUoTXRiU5LQ/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/15aKiY3xsE2i2Eqws4q2WROHON8MzOcwz/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={BasketballImg}
         sportName={"Basketball"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSeUGquMMbtStyObdJMPxbjt7gC39hFRkLwYXE9uA-dRlff8ZQ/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1ZMm28V0Yzg7RxCYFNZY6VZ7LJ6PXgS-9/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={KabaddiImg}
         sportName={"Kabaddi"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSeCgmcsTFaro7z69PXK4w0dL1Qj_Jhlka2OojHbeGYL9m7BSw/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1AOzZJDGLMl_HI-hB8o4ncr3QbXrUe6j7/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={AthleticsImg}
         sportName={"Athletics"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSdqLLt_dR8l8-Q2bnhZcevaInGGVZCZstDueRYzHVHQ_xvW7A/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1l17SAFfkQJMBzZxR8IETlgiK6VfeYCyd/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={BadmintonImg}
         sportName={"Badminton"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSce9esKkLa-YaG_EKTkaM86T4txDl5XgmfEXfzXBD4mdPrOCg/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1mm0XEqCuYd1kswOwpAael3Ra0jiBspqC/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={TableTennisImg}
         sportName={"Table Tennis"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSef-Pkrj25D03jrYd69au6SRBRBF62GSmbIkuZ2S_zJGdTXUA/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1PAhnNHdaXHPaKcRsjbpCPLCdwFY8Kzfb/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={SquashImg}
         sportName={"Squash"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSd9cB8fvLIRcJl7dG0IkureJOVRWEj8yPAmLxjOsQqs8vmg2Q/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1hbdNFxBwzpDx3xdJSpKsSXu5ZfQT5KUU/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={ChessImg}
         sportName={"Chess"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSfOx4CR6WztYcqdYEgoLn-QNoC0uJGF9FcN-3g5ynbv1mvngg/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1steHeQnWfZ-V-EkVeNDqhUWihstQyUn-/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={TennisImg}
         sportName={"Tennis"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSc9voNSjZgR1cO6FlM2Wlfv7A8cbR3AZX4PEANqz7cJwadPvg/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/1F_BAZ74zQk9_X58tuEz2PzBWQPV9ronD/view?usp=sharing"
         }
       />
       <SportBanner
         sportImg={PowerliftingImg}
         sportName={"Power Lifting"}
         eventLink={
-          "https://docs.google.com/forms/d/e/1FAIpQLSet_viNODmukxFJPB4GuCQIkwNdBhhRCkAMEUgLlP2DQOyLgw/viewform?usp=sf_link"
+          "https://drive.google.com/file/d/14E1cs_MNZTSEU8xHcCHJwKP7Bofao0Sy/view?usp=sharing"
         }
       />
       <SportBanner
