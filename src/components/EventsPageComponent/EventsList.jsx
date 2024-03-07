@@ -49,6 +49,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSesHa1BiLBuHtDSlEo0cEJiDnAsbuwH807c93ADUoTXRiU5LQ/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1lIjyeZKUPPHrnQ-l4tvBMDUao_0xSF4w/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={BasketballImg}
@@ -80,7 +81,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSce9esKkLa-YaG_EKTkaM86T4txDl5XgmfEXfzXBD4mdPrOCg/viewform?usp=sf_link"
         }
-        scheduleLink={"https://drive.google.com/file/d/1spEw4ZMsmC-6u_oc8RaBbLPDwwfASK1K/view?usp=drive_link"}
+        scheduleLink={"https://drive.google.com/file/d/1EPYgqolYGA_Rd_Yo1c8K9J5QieAZHzCh/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={TableTennisImg}
