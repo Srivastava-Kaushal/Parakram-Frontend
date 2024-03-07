@@ -74,6 +74,7 @@ const Events = () => {
 					{'Events'.split('').map((letter, index) => (
 						<motion.span className="inline-block" key={index} variants={item2}>
 							{letter}
+							
 						</motion.span>
 					))}
 				</span>

@@ -24,6 +24,9 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLScN42V1fYMVrFD2I0hqnY76uhGpiJoDQRABQ8_IG9Wbz_W8pA/viewform?usp=sf_link"
         }
+        scheduleLink={
+          "https://drive.google.com/file/d/1BW5Qppk7vp9gVKum1gqUhY21x9XZdJqP/view?usp=drive_link"
+        }
       />
       <SportBanner
         sportImg={CricketImg}
@@ -31,6 +34,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLScVKsYEMnR7VE-ZC7e7mTHzMFLGQB4HqOuczmOIALBwe-BEVw/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1AaEKscsLP6cwghdkNbQI7YhWTRKop96g/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={HockeyImg}
@@ -52,6 +56,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSeUGquMMbtStyObdJMPxbjt7gC39hFRkLwYXE9uA-dRlff8ZQ/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/17sUO9TP5eNET1aejPr_mQWsOh7DVS_ph/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={KabaddiImg}
@@ -59,6 +64,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSeCgmcsTFaro7z69PXK4w0dL1Qj_Jhlka2OojHbeGYL9m7BSw/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1LEJgqHlyYiCIccDoE8tfRNJkp_Kt1AyS/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={AthleticsImg}
@@ -66,6 +72,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSdqLLt_dR8l8-Q2bnhZcevaInGGVZCZstDueRYzHVHQ_xvW7A/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1pXm1GMqFYtDJ0JjaaaScBXVpFKRvFoy1/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={BadmintonImg}
@@ -73,12 +80,16 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSce9esKkLa-YaG_EKTkaM86T4txDl5XgmfEXfzXBD4mdPrOCg/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1spEw4ZMsmC-6u_oc8RaBbLPDwwfASK1K/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={TableTennisImg}
         sportName={"Table Tennis"}
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSef-Pkrj25D03jrYd69au6SRBRBF62GSmbIkuZ2S_zJGdTXUA/viewform?usp=sf_link"
+        }
+        scheduleLink={
+          "https://drive.google.com/file/d/1qvuVh8zD-r8r_F1x8pGXQ4cHOUobiLPz/view?usp=drive_link"
         }
       />
       <SportBanner
@@ -87,6 +98,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSd9cB8fvLIRcJl7dG0IkureJOVRWEj8yPAmLxjOsQqs8vmg2Q/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1qheeFAvEdlv19wcUqKUUkhniOexUbItq/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={ChessImg}
@@ -94,6 +106,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSfOx4CR6WztYcqdYEgoLn-QNoC0uJGF9FcN-3g5ynbv1mvngg/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1R5VTFR9-wO0MZxQJemlgFUL2xsw0nVVj/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={TennisImg}
@@ -101,6 +114,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSc9voNSjZgR1cO6FlM2Wlfv7A8cbR3AZX4PEANqz7cJwadPvg/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1VdKu1YpjkEhwp2B3GETs8ifBSbSy6cbb/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={PowerliftingImg}
@@ -108,6 +122,7 @@ const EventsList = () => {
         eventLink={
           "https://docs.google.com/forms/d/e/1FAIpQLSet_viNODmukxFJPB4GuCQIkwNdBhhRCkAMEUgLlP2DQOyLgw/viewform?usp=sf_link"
         }
+        scheduleLink={"https://drive.google.com/file/d/1W2oq_cub9rna3zsyPfxGdm7Lg_yw3Llk/view?usp=drive_link"}
       />
       <SportBanner
         sportImg={BoxingImg}

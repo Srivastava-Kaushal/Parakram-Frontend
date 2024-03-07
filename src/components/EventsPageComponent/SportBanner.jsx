@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./banner.css";
+import zIndex from "@mui/material/styles/zIndex";
 // Now I want to find proper image for the rest of the sports and populate individual sports too
 // make use of array for banner info
 // add hover effect =-> more backdrop and the slanted container shift animation
@@ -26,7 +27,7 @@ const bannerVariantsSmall = {
   },
 };
 
-const SportBanner = ({ sportImg, sportName, eventLink }) => {
+const SportBanner = ({ sportImg, sportName, eventLink,scheduleLink }) => {
   const [isSmall, setIsSmall] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -57,14 +58,21 @@ const SportBanner = ({ sportImg, sportName, eventLink }) => {
         <img
           src={sportImg}
           alt="sport"
-          className="object-cover"
-          style={isSmall ? { height: "100%" } : { width: "100%" }}
+          className="object-cover -z-1"
+          style={isSmall ? { height: "100%" } : { width: "100%" } }
+          
+          
         />
         {/* <span className="w-[80vw] h-[120vh] bg-black/30 backdrop-blur-md absolute z-10 top-0 -left-96 rotate-45"> */}
         <span className="blurry-div  bg-black/30 backdrop-blur-md absolute z-10 top-0 -left-96 rotate-45"></span>
         <span className="text-[2.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[5rem] text-white absolute top-[50%] -translate-y-[50%] left-14 z-20">
           {sportName}
+          <br></br>
+          <a href={scheduleLink}>
+          <button className="text-[1.1rem] border-solid border-4 border-gray-700 py-1.5 px-1" >Schedule</button>
+          </a>
         </span>
+        
       </Link>
     </motion.div>
   );
